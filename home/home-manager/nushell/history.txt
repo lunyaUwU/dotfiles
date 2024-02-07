@@ -1,0 +1,923 @@
+nixos-rebuild 
+config nu
+hx | config.nu
+config nu | hx
+$env.EDITOR=hx && config nu
+$env.EDITOR=hx; config nu
+export EDITOR=hx
+export
+set EDITOR=hx
+$env.EDITOR = hx
+config nu
+config env
+"a" + "b"
+whoami + "mew"
+(whoami + "2"<\n>)
+whoami
+(whoami) + "w"
+whoami
+config env
+nu
+config env
+%env.EDITOR = hx
+$env.EDITOR = hx
+config env
+"a !{(whoami)}"
+config env
+config nu
+config env
+nu
+java
+nix-shell -p java
+ls
+java Skyclient-Universal-Installer-2.0.4.jar
+java -jar Skyclient-Universal-Installer-2.0.4.jar
+sudo hx /etc/nixos/packages.nix
+nmtui
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch --impure
+sudo hx /etc/nixos/packages.nix
+cd Documents/Schule/Math/
+ping google.com
+nmtui
+ping google.com
+sudo nixos-rebuild switch --impure
+ping google.com
+nmtui
+ranger
+ls
+sudo nixos-rebuild switch --impure
+sudo hx /etc/nixos/packages.nix
+ls -t
+sudo nixos-rebuild switch --impure
+ls
+cd BLF
+ls
+sudo hx /etc/nixos/packages.nix
+nix-channel --upgrade 
+nix-channel --update
+nixos-rebuild switch --upgrade
+sudo nixos-rebuild switch --upgrade
+syncthing 
+nix-channel --update
+sudo nixos-rebuild switch --upgrade
+sudo hx /etc/nixos/packages.nix
+nix-channel --update
+sudo nixos-rebuild switch
+nvim project/nix-gaming/
+cd project/nix-gaming/
+cd pkgs/
+ls
+cd osu-stable/
+ls
+cd Downloads/
+sha256sum  dxvk-1.7.1.tar.gz
+hx default.nix
+cd project/nix-gaming/
+cd project/nix-gaming/
+hx default.nix
+git pulll
+git pull
+nix-build
+cd ..
+git pull
+cd 
+ls
+cd ./ssh
+cd .ssh
+ls
+files
+cat id_ed25519.pub
+cd project/nix-gaming/
+git build
+cd pkgs/
+cd osu-stable/
+ls
+cd ..
+cd Downloads/
+ls
+mkdir dxvk
+mv dxvk-1.7.1.tar.gz dxvk/
+cd dxvk/
+ls
+tar
+tar -xzvf dxvk-1.7.1.tar.gz
+hx default.nix
+cd project/nix-gaming/
+cd osu-stable/
+cd pkgs/osu-stable/
+ls
+cd ..
+cp osu-stable/ osu-stable-ll/
+cp -r osu-stable/ osu-stable-ll
+ls
+git restore osu-stable/*
+cd osu-stable/
+ls
+hx default.nix
+cd osu-stable/
+hx default.nix
+cd ..
+hx default.nix
+cd nix-gaming/
+cd pkgs/
+hx default.nix
+ls
+hx default.nix
+hx ../.github/workflows/build.yml
+hx ../.github/workflows/nix.yml
+hx ../.github/workflows/check.yml
+hx ../.github/workflows/update.yml
+cd Downloads/dxvk/
+ls
+rm -rf dxvk-1.7.1/ 
+mv dxvk-1.7.1.tar.gz dxvktar.gz
+mv dxvktar.gz dxvk.tar.gz
+tar -xzvf dxvk.tar.gz
+ls
+hx test.sh
+chmod +x test.sh
+ls
+./test.sh
+cd Downloads/dxvk/
+cat <<EOF >test
+cat <<EOF > test
+cat << EOF 
+cat test.md << EOF 
+cat > test 
+cat > test >>EOF
+sudo hx /etc/nixos/configuration.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/configuration.nix
+sudo hx /etc/nixos/packages.nix
+sudo hx /etc/nixos/configuration.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/configuration.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/configuration.nix
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx osu-stable-ll/default.nix
+git add *
+git commit -m "aah"
+git push
+sudo hx /etc/nixos/packages.nix
+sudo hx /etc/nixos/flake.nix
+git pull
+ls
+nix-shell alejandra
+nix-shell -p alejandra
+git add *
+git commit -m "fixxed something"
+git push
+cd ..
+cd nix-gaming/
+cd pkgs/
+ls
+cd wine/
+ls
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/packages.nix
+sudo hx /etc/nixos/configuration.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/configuration.nix
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+dir
+cd .osu/
+ls
+hx system.reg
+ls
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/packages.nix
+sudo hx /etc/nixos/configuration.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/configuration.nix
+sudo hx /etc/nixos/packages.nix
+cd Documents/Schule/
+ls
+cd Chemie/
+ls
+nasm
+hx /etc/nixos/packages.nix
+cd project/
+ls
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+nasm
+main.asm
+hx main.asm
+hx chemische-reaktionen.md
+sudo shutdown now
+ping google.com
+nmtui
+systemctl restart networkmanager
+systemctl restart networkManager
+systemctl lits
+systemctl list
+hx .config/hypr/hyprland.conf
+hx .config/hypr/scripts/volumecontrol.sh
+hx .config/hypr/hyprland.conf
+.config/hypr/hyprland.conf m
+hx .config/hypr/hyprland.conf
+cd Downloads/dxvk
+ls
+hx .config/hypr/scripts/volumecontrol.sh
+.config/hypr/hyprland.conf m
+hx .config/hypr/scripts/volumecontrol.sh
+.config/hypr/hyprland.conf m
+cd Documents/Schule/
+ls
+cd Music/
+ls
+hx something.md
+mv something.md impressionissmuss.md
+ls
+..
+Documents/
+Schule/
+ls
+cd Kunst/
+ls
+md
+ls
+cd .config/hypr/
+ks
+ls
+cd scripts/
+ls
+chmod +x keyboard_toggle.sh
+./keyboard_toggle.sh
+hx Abstractionsprozesse.md
+cd Documents/Schule/Math/
+ls
+calc
+27*3
+echo 27*3
+py
+ps
+cd project/
+cargo new table-generator
+cd table-generator/
+ls
+hx src/
+luna
+hx src/
+cargo doc
+cd project/table-generator/
+cargo doc
+cargo doc --open
+cd project/table-generator/
+hx src/
+cargo doc --open
+hx src/
+cargo doc --open
+cargo run
+hx src/
+cargo run
+hx src/
+cargo run
+hx src/
+cargo run
+cc
+bits xor 0x40 0xff
+bits xor 0x40 
+bits xor 
+bits xor 1 1
+bits xor 1
+bits xor 1 | 1
+bits xor
+bits xor --help
+0x40 | bits xor 0x10
+40 | bits xor 1
+[0x40 0x41 0x45] | bits [0x10 0x20]
+[0x40 0x41 0x45] | bits xor [0x20]
+[0x40 0x41 0x45] | bits xor 0x20
+[0x40 0x41 0x45] | bits xor 0x20 | to md 
+[0x40 0x41 0x45] | bits xor 0x20 | to csv 
+[0x40 0x41 0x45] | bits xor 0x20 | to text 
+[0x40 0x41 0x45] | bits xor 0x20
+table
+table [0x10]
+table --help
+:q
+join --help
+[0x40 0x41 0x45] | bits xor 0x20 | join [0x40 0x41 0x45]
+[0x40 0x41 0x45] | bits xor 0x20 | join [0x40 0x41 0x45] a
+table --help
+[[x y]; [1 2]] | table 
+cd project/
+cd ..
+rm table-generator/
+rm -rf table-generator/
+mkdir nu-test
+cd nu-test/
+ls
+hx test.nu
+hx --help
+hx --tutor
+nu config
+config nu 
+$env.EDITOR=hx &&config env
+$env.EDITOR=hx
+$env.EDITOR = hx
+config nu 
+hx test.nu
+config env
+cd project/
+ls
+cd nu-test/
+ls
+cd project/
+cd nu-test/
+$env.EDITOR = hx
+hx test.nu
+nu test.nu
+hx test.nu
+nu test.nu
+hx test.nu
+nu test.nu
+cd Documents/Schule/Französisch/
+ls
+nmtui
+nix shell -p owofetch
+nix-shell -p owofetch
+nix-shell -p uwufetch
+ld
+cd project/
+cargo new
+cargo new test
+cargo new awa
+cd awa
+cargo run
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+owofetch 
+pfetch
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+cd Documents/Schule/Reli/
+ls
+cd Documents/Schule/Reli/
+cd Documents/Schule/Grw/
+ls
+pfetch
+owofetch 
+pfetch
+neofetch
+neowofetch 
+cp -r .config/neofetch/ .config/neofetch.b
+cd .config/neofetch/
+ls
+hx config.conf
+mv config.conf config.conf.b
+ls
+mv config.conf config.conf.b
+ls
+cd Documents/Schule/Grw/
+cd Documents/Schule/Chemie
+cd project/
+ls
+hx chemische_gleichgewicht.md
+nmtui
+cd Documents/Schule/Chemie
+cd Documents/Schule/Grw/
+ls
+hx Wirtschaft.md
+hx Wirtschaft/Wirtschaft.md
+cd Documents/Schule/Reli/
+cd Documents/Schule/Geschichte/
+ls
+tree
+ls
+cd Documents/Schule/Geschichte/
+hx /etc/nixos/packages.nix
+hx phasen_der_entspannung.nix
+hx phasen_der_entspannung.hx
+sudo hx /etc/nixos/packages.nix
+sudo hx /etc/nixos/configuration.nix
+sudo nixos-rebuild switch
+bluemoon 
+pipewire-pulse 
+pipewire-pulse  --help
+pipewire 
+ping 172.22.99.205
+PULSE_SERVER=172.22.99.205 firefox
+pactl
+PULSE_SERVER=172.22.99.205 firefox
+PULSE_SERVER=172.22.99.205 pactl
+cd Documents/Schule/Grw/
+hx test.md
+ls
+cd Wirtschaft
+ls
+hx Wirtschaft.md
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch --upgrade
+hx /etc/nixos/packages.nix
+hx /etc/nixos/configuration.nix
+sudo hx /etc/nixos/configuration.nix
+sudo nixos-rebuild switch --upgrade
+hx /etc/nixos/configuration.nix
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch --upgrade
+ping pastebin.com
+cd Documents/Schule/Grw/Wirtschaft/
+cd Documents/Schule/English/
+ls
+hx /etc/nixos/packages.nix
+sudo hx /etc/nixos/configuration.nix
+sudo nixos-rebuild switch --upgrade
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/configuration.nix
+hx /etc/nixos/packages.nix
+sudo hx /etc/nixos/configuration.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx .config/helix/config.toml
+hx /etc/nixos/packages.nix
+hx .config/helix/config.toml
+sudo nixos-rebuild switch
+hx .config/helix/config.toml
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+cd project/
+gcl https://github.com/p-e-w/ternimal
+git clone https://github.com/p-e-w/ternimal
+cd ternimal/
+ls
+cd Documents/Schule/Geschichte/
+ls
+cd Documents/Schule/Music/
+nmtui
+cd 
+cd Templates/
+cd ..
+cd project/ternimal/
+ls
+hx shell.nix
+nix develop
+nix shel
+nix shell
+ls
+hx shell.nix
+cd ..
+cd ternimal/
+nix-shell
+nmtui
+nmcli
+nmcli scan
+nmcli --help
+nmcli n
+nmcli device
+nmcli device wlp4s0
+nmcli device wlp4s0 --help
+nix-shell
+hx /etc/nixos/packages.nix
+btm
+nix-shell
+hx /etc/nixos/packages.nix
+thokr
+btm
+nmtji
+nmtui
+cd Documents/Schule/English/
+ls
+cd ..
+cd Französisch/
+nmtui
+systemctl stop create_ap
+nix-store 
+nix-store --searcj
+nix-store --search
+nix-store --search obsidian
+hx .config/home-manager/home/packages/helio.tar.gz
+hx .config/home-manager/home/packages/daw.nix
+hx .config/home-manager/home/packages/default.nix
+hx .config/home-manager/home/packages/fonts.nix
+hx /etc/nixos/theme.nix
+hx .config/home-manager/home/packages/daw.nix
+hx /etc/nixos/theme.nix
+hx .config/home-manager/home/packages/daw.nix
+hx /etc/nixos/theme.nix
+cd Documents/Schule/Geschichte/
+ls
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+ping google.com
+hx /etc/nixos/packages.nix
+btm
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+hx /etc/nixos/services.nix
+hx /etc/nixos/packages.nix
+hx /etc/nixos/configuration.nix
+sudo hx /etc/nixos/configuration.nix
+sudo hx /etc/nixos/services.nix
+sudo nixos-rebuild switch
+sudo hx /etc/nixos/services.nix
+sudo nixos-rebuild switch
+systemctl status vaultwarden
+:q
+systemctl status vaultwarden
+users 
+vaultwarden
+nix
+hx /etc/nixos/configuration.nix
+hx /etc/nixos/packages.nix
+cd Downloads/
+ls
+cd ..
+mkdir protonfit
+cd protonfit
+ls
+curl -lO https://raw.githubusercontent.com/Francesco149/protonfit/master/protonfit
+chmod +x protonfit
+./protonfit
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+cd protonfit/
+ls
+protonfit
+./protonfit
+locate PROTON
+locate
+nix-shell -p transmission
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+transmission-show 
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+nix-shell -p flameshot
+ping google.com
+sudo nixos-rebuild switch
+cd /etc/nixos/
+sudo flake update 
+sudo nix flake update
+nix-shell -p flameshot
+sudo  nixos-rebuild switch
+cd /etc/nixos/
+ls
+sudo hx /etc/nixos/services.nix
+sudo hx /etc/nixos/packages.nix
+sudo hx /etc/nixos/configuration.nix
+sudo hx /etc/nixos/packages.nix
+ls
+mkdir home
+sudo chmod a+rw * 
+ls
+mkdir test
+cd ..
+chmod -R a+rwx nixos/
+sudo chmod -R a+rwx nixos/
+cd nixos/
+ls
+mkdir cachix
+./flake.nix
+ls
+cd ..
+chmod --help
+chmod -R a-x NIXOS 
+sudo chmod -R a-x nixos
+cd nixos
+ls
+cd nixos
+ls
+cd nixos/
+chmod a+r nixos/
+sudo chmod -R a+r nixos/
+cd nixos
+sudo chmod a+r nixos/
+ls
+cd nixos/
+sudo chmod a+r nixos/
+cd nixos/
+ls NIXOS
+ls nixos
+cd nixos/
+cd /etc/nixos
+sudo chmod luna -R +rwx /etc/nixos
+setfal
+sudo setfacl -R -m u:luna:rw /etc/nixos 
+cd /etc/nixos
+sudo chown luna: /etc/nixos
+cd /etc/nixos/
+bash
+sudo setfacl -R -m u:luna:rxw /etc/nixos 
+cd /etc/nixos/
+sudo setfacl -R -m u:luna:rx /etc/
+cd /etc/NetworkManager/
+cd ..
+cd nixos
+ls
+ls -l
+sudo setfacl -R -m u:luna:rwx /etc/nixos
+sudo setfacl -m u:luna:rwx /etc/nixos
+sudo chmod a+rwx /etc/nixos
+ls
+cd nixos
+ls
+ls -a
+ls -l
+sudo chmod -x *
+ls -l
+sudo chmod +x *
+ls -l
+sudo chmod u-x
+sudo chmod u-x *
+ls -l
+sudo chmod -x *
+ls
+ls -l
+ls
+mkdir home
+cd xh
+ls
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+hx /etc/nixos/packages.nix
+sudo nixos-rebuild switch
+hx /etc/nixos/packages.nix
+nix-shell -p hyprlock
+sudo nixos-rebuild switch
+nix-shell -p hyprlock
+ls
+cd /etc/nixos
+ls
+ls
+cd /etc/nixos/home
+ls
+hx ../cachix.nix
+cd Documents/Schule/Physik/
+ls
+hx configuration.nix
+sudo nixos-rebuild switch
+hx default.nix
+hx home-manager.nix
+hx packages.nix
+hx default.nix
+hx configuration.nix
+hx boot.nix
+hx configuration.nix
+hx packages.nix
+hx configuration.nix
+hx packages.nix
+hx default.nix
+ls
+hx packages.nix
+hx home-manager.nix
+hx configuration.nix
+hx default.nix
+hx home-manager.nix
+hx hardware.nix
+hx default.nix
+cd ..
+ls
+hx flake.nix
+flake update
+nix flake update
+sudo nix flake update
+hx configuration.nix
+nixos-rebuild switch
+chmod a+rw /etc/nixos/cachix/nix-gaming.nix
+sudo chmod a+rw /etc/nixos/cachix/nix-gaming.nix
+nixos-rebuild switch
+sudo nixos-rebuild switch
+hx home/default.nix
+sudo nixos-rebuild switch
+hx home/home-manager.nix
+sudo nixos-rebuild switch
+hx home/home-manager.nix
+sudo nixos-rebuild switch
+hx home/home-manager.nix
+cp -R boot.nix hardware-configuration.nix cachix/ cachix.nix home
+cp -r boot.nix hardware-configuration.nix cachix/ cachix.nix home
+sudo cp -r boot.nix hardware-configuration.nix cachix/ cachix.nix home
+hx home/default.nix
+sudo nixos-rebuild switch
+hx home/default.nix
+cd home/
+ls
+sudo rm cachix cachix.nix hardware-configuration.nix boot.nix
+sudo rm -rf cachix cachix.nix hardware-configuration.nix boot.nix
+hx deafault.nix
+hx default.nix
+sudo nixos-rebuild switch
+hx ../packages.nix
+hx home-manager.nix
+hx ../packages.nix
+hx home-manager.nix
+sudo nixos-rebuild switch
+hx default.nix
+hx ../configuration.nix
+hx default.nix
+cd /etc/nixos/
+ls
+cd home
+ks
+ls
+hx default.nix
+hx hardware.nix
+hx ../flake.nix
+hx hardware.nix
+ls
+nmtui
+nmcli device wlp4s0 scan
+nmcli device
+nmcli --help
+nmcli r
+nmcli c
+nmcli d
+nmcli --help d
+nmcli --help  g
+nmcli g
+nmcli g --help
+nmcli d --help
+nmcli d wifi rescan
+nmcli d wifi list
+hx /etc/nixos/
+cd /etc/nixos
+ls
+rm nix-alien.nix
+rm packages.nix
+rm services.nix
+ls
+rm configuration.nix
+ls
+cd /etc/nixos
+ls
+cd home
+ls
+mkdir home-manager
+ls
+mv home-manager.nix home-manager/default.nix
+ls
+hx default
+cd default.nix
+hx default.nix
+cd home-manager/
+ls
+cd .config/home-manager/
+ls
+cd home/
+ös
+ls
+cd config
+ls
+ld
+cp hypr/ waybar/ /etc/nixos/home/home-manager/
+cp -r hypr/ waybar/ /etc/nixos/home/home-manager/
+ls
+hx default.nix
+mkdir config
+rmdir config
+ls
+hx default.nix
+cd hypr/
+ls
+cd hypr/
+ls
+cp ~/.config/hypr/hyprland.conf .
+ls
+cd ..
+ls
+cd ..
+cp hypr/ helix
+cp -r hypr/ helix
+ls
+cd helix
+ls
+rm hypr/
+rm -rf hypr/
+cp ~/.config/helix/ .
+ls
+cp -r ~/.config/helix/ .
+ls
+hx default.nix
+ls
+cd ..
+ls
+cd default.nix
+hx default.nix
+cd ..
+ls
+cp -r hypr/ neofetch
+ks
+ls
+cd neofetch/
+ls
+rm hypr/
+rm -rf hypr/
+ls
+cd ..
+rm neofetch/
+rm -rf neofetch/
+ls
+cd helix/
+ls
+mv helix/ ../
+mv helix/* .
+ls
+hx default.nix
+ls
+rm default.nix
+ls
+cd ..
+ls
+cd hypr/
+ls
+mv hypr/* .
+ls
+rm hypr/
+ls
+mv default.nix ../
+ls
+cd ..
+ls
+hx waybar/
+cp ~/.config/kitty .
+cp -r ~/.config/kitty .
+cp -r ~/.config/nheko .
+ls
+mv waybar/default.nix default.b.nix
+ls
+cd waybar/
+ls
+mv waybar/* .
+rm waybar
+ls
+cd ..
+ls
+cd /etc/nixos/home/home-manager/
+ls
+cd Documents/Schule/English
+ls
+hx default.nix
+ls
+hx default.nix
+hx default.b.nix
+cd ..
+cd home-manager/
+hx /etc/nixos/ls
+hx /etc/nixos/home/default.nix
+hx default.nix
+cd /etc/nixos/home/home-manager/
+ls
+hx default.b.nix
+cp ~/.config/nushell/ .
