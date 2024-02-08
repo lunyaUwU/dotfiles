@@ -4,7 +4,7 @@
   imports = [
     ./home-manager
     ./hardware.nix
-    ../hardware-configuration.nix
+    ./hardware-configuration.nix
     ../boot.nix
     ../cachix.nix
     ./packages.nix
