@@ -16,7 +16,7 @@
     enable = true;
     };
   fonts.packages = with pkgs; [
-  #  nerdfonts
+    nerdfonts
   ];
     #home-manager
   environment.systemPackages = with pkgs; [
@@ -30,6 +30,7 @@
   
   users.users.luna.packages = with pkgs; [
     direnv
+    alacritty
     #ccgo13
     transmission-gtk
     icoutils

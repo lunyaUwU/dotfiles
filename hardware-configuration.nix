@@ -62,11 +62,6 @@
       fsType = "vfat";
     };
 
-  #fileSystems."/drive-2" =
-  #  { device = "/dev/disk/by-uuid/aa4aa602-74f2-4d80-aa13-e757e8445247";
-  #    fsType = "btrfs";
-  #  };
-
   swapDevices =
     [ { device = "/dev/disk/by-uuid/1655bd9d-a0c5-48d1-b18b-815482b7d94f"; }
     ];
@@ -76,6 +71,7 @@
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
+  # networking.interfaces.ap0.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp3s0f1.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp4s0.useDHCP = lib.mkDefault true;
 

@@ -1,7 +1,10 @@
-{config, pkgs,nix-gaming, ...}: 
+{config, pkgs,nix-gaming,c3d2-user,...}: 
 {
 
-  imports = [nix-gaming.nixosModules.pipewireLowLatency];
+  imports = [
+    nix-gaming.nixosModules.pipewireLowLatency
+    c3d2-user.nixosModule
+  ];
   
   services.blueman.enable = true;
   networking.hostName = "shork";
@@ -9,6 +12,7 @@
   
   services.xserver.videoDrivers = ["nvidia"];
   hardware = {
+    xpadneo.enable = true;
     opentabletdriver= {
       enable = true;
       daemon.enable = true;

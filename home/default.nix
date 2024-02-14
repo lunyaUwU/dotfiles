@@ -4,7 +4,7 @@
   imports = [
     ./home-manager
     ./hardware.nix
-    ./hardware-configuration.nix
+    ../hardware-configuration.nix
     ../boot.nix
     ../cachix.nix
     ./packages.nix
@@ -14,7 +14,8 @@
   users.users.luna = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "adbuser" ]; # Enable ‘sudo’ for the user.
-    shell = pkgs.nushellFull;
+    #shell = pkgs.nushellFull;
+    
   };
   system.stateVersion =  "24.05";
 }
