@@ -8,10 +8,6 @@
   };
   programs.steam.enable = true;
   programs.dconf.enable = true;
-  programs.neovim = {
-    enable =  true;
-    defaultEditor = true;
-  };
   programs.hyprland = {
     enable = true;
     };
@@ -27,7 +23,7 @@
  
   ];
   programs.adb.enable = true;
-  
+    
   users.users.luna.packages = with pkgs; [
     direnv
     alacritty

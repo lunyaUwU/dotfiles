@@ -5,14 +5,15 @@
     nix-gaming.nixosModules.pipewireLowLatency
     c3d2-user.nixosModule
   ];
-  
+  boot.extraModulePackages = with config.boot.kernelPackages; [ xone ];
+  c3d2.audioStreaming = true;  
   services.blueman.enable = true;
   networking.hostName = "shork";
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
   
   services.xserver.videoDrivers = ["nvidia"];
   hardware = {
-    xpadneo.enable = true;
+    xone.enable = true;
     opentabletdriver= {
       enable = true;
       daemon.enable = true;
