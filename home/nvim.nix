@@ -1,4 +1,5 @@
-{nixvim, pkgs, config,...}: 
+{nvim-conf, pkgs, config,...}: 
+
 {
- users.users.luna.packages = [nixvim];    
+  users.users.luna.packages = [nvim-conf.packages.x86_64-linux.default];    
 }

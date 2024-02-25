@@ -15,16 +15,22 @@
     nerdfonts
   ];
     #home-manager
-  environment.systemPackages = with pkgs; [
-    vim
-    wget
-    curl
-    git
+  environment.systemPackages =  [
+    
+    pkgs.vim
+    pkgs.wget
+    pkgs.curl
+    pkgs.git
+#    pkgs.fido2luks
  
   ];
   programs.adb.enable = true;
-    
+  services.flatpak.enable = true; 
   users.users.luna.packages = with pkgs; [
+    #schildichat-deskto
+    flatpak
+    #nitrokey-app2
+    yubikey-manager
     direnv
     alacritty
     #ccgo13
@@ -32,7 +38,7 @@
     icoutils
     bitwarden
     gamemode
-    ungoogled-chromium
+#    ungoogled-chromium
     inkscape-with-extensions
     pfetch
     owofetch

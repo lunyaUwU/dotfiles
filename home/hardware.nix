@@ -8,9 +8,8 @@
   boot.extraModulePackages = with config.boot.kernelPackages; [ xone ];
   c3d2.audioStreaming = true;  
   services.blueman.enable = true;
-  networking.hostName = "shork";
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
-  
+  networking.firewall.checkReversePath = false; 
   services.xserver.videoDrivers = ["nvidia"];
   hardware = {
     xone.enable = true;
