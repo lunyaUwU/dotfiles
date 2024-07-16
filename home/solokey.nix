@@ -1,5 +1,5 @@
  { config, pkgs, ... }:
- {
+{
    programs.gnupg.agent = {
      enable = true;
      enableSSHSupport = true;
@@ -20,7 +20,9 @@ SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="b000", TAG+="ua
 SUBSYSTEM=="tty", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="beee", TAG+="uaccess"
 # Solo 2
 SUBSYSTEM=="usb", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="beee", TAG+="uaccess" 
-  '';
+SUBSYSTEM=="vfio", OWNER="root", GROUP="kvm"  
+#SUBSYSTEM=="usb", ATTRS{idVendor}=="194f", ATTRS{idProduct}=="0301", TAG+="uaccess"
+'';
 
  # https://github.com/solokeys/solo2-cli/blob/main/70-solo2.rules
    services.udev.packages = [
@@ -41,3 +43,5 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="beee", TAG+="uacce
      })
   ];
   }
+
+

@@ -1,8 +1,7 @@
-{config, pkgs,nix-gaming,c3d2-user,...}: 
+{config, pkgs,c3d2-user,...}: 
 {
 
   imports = [
-    nix-gaming.nixosModules.pipewireLowLatency
     c3d2-user.nixosModule
   ];
   boot.extraModulePackages = with config.boot.kernelPackages; [ xone ];
@@ -10,22 +9,18 @@
   services.blueman.enable = true;
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
   networking.firewall.checkReversePath = false; 
-  services.xserver.videoDrivers = ["nvidia"];
+  #services.xserver.videoDrivers = ["nvidia"];
+ #security.pam.loginLimits = [
+ #  { domain = "@kvm"; item = "memlock"; type = "soft"; value = "unlimited"; }
+ #  { domain = "@kvm"; item = "memlock"; type = "hard"; value = "unlimited"; }
+ #  { domain = "@libvirtd"; item = "memlock"; type = "soft"; value = "unlimited"; }
+ #  { domain = "@libvirtd"; item = "memlock"; type = "hard"; value = "unlimited"; }
+ #];
   hardware = {
     xone.enable = true;
     opentabletdriver= {
       enable = true;
       daemon.enable = true;
-    };
-    nvidia = {
-      modesetting.enable = true;
-      nvidiaSettings = true;
-      package = config.boot.kernelPackages.nvidiaPackages.production;
-      prime = {
-  # Make sure to use the correct Bus ID values for your system!
-        intelBusId = "PCI:0:2:0";
-        nvidiaBusId = "PCI:1:0:0";
-      };
     };
     bluetooth = {
       enable = true;
@@ -33,14 +28,12 @@
     };
     pulseaudio.enable = false;
   };
-  sound.enable = true;
   services.pipewire = {
     pulse.enable = true;
     jack.enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
     enable = true;
-    lowLatency.enable = true;
     wireplumber.enable = true;
   };
   services.xserver.enable = true;
@@ -49,3 +42,4 @@
   services.printing.enable = true;
 
 }
+

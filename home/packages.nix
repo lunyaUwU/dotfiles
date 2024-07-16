@@ -1,7 +1,6 @@
-{ config, lib, pkgs,audio,home-manager,inputs,nix-gaming, ...}:
+{ audio,config, lib, pkgs, nix-gaming,...}:
 {
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays = [ audio.overlays.default ];
   nix.settings = {
     substituters = ["https://lunya.cachix.org"];
     trusted-public-keys = ["lunya.cachix.org-1:dfij+/AsTSBE9hCPNIDd7dVGHpMi2P2HKSFIYUl5Zoo="];
@@ -10,13 +9,14 @@
   programs.dconf.enable = true;
   programs.hyprland = {
     enable = true;
-    };
+ 
+ };
   fonts.packages = with pkgs; [
     nerdfonts
   ];
+  nixpkgs.overlays = [audio.overlays.default];
     #home-manager
   environment.systemPackages =  [
-    
     pkgs.vim
     pkgs.wget
     pkgs.curl
@@ -24,10 +24,24 @@
 #    pkgs.fido2luks
  
   ];
+  #services.xserver.desktopManager.gnome.enable = true;
   programs.adb.enable = true;
-  services.flatpak.enable = true; 
   users.users.luna.packages = with pkgs; [
+    fwupd
+    nix-gaming.packages.${pkgs.system}.osu-lazer-bin
+    pciutils
+    obs-studio 
     #schildichat-deskto
+    prismlauncher
+    mixxx
+    bitwig-studio5-stable-latest
+    krita
+    typst
+    arduino-ide
+    firefox
+    epiphany
+    python3
+    neovide
     flatpak
     #nitrokey-app2
     yubikey-manager
@@ -38,7 +52,7 @@
     icoutils
     bitwarden
     gamemode
-#    ungoogled-chromium
+    ungoogled-chromium
     inkscape-with-extensions
     pfetch
     owofetch
@@ -50,13 +64,10 @@
     lsp-plugins
     xonotic
     libremines
-    nix-gaming.packages.${pkgs.system}.proton-ge      
-    nix-gaming.packages.${pkgs.system}.osu-lazer-bin
-    nix-gaming.packages.${pkgs.system}.osu-stable-ll
     vital
     distrho
     pavucontrol
-    firefox
+   # firefox
     tree
     home-manager
     #obsidian
@@ -65,11 +76,10 @@
     lshw
     discord
     bottom
-    minecraft
     linux-wifi-hotspot
     thunderbird	
     betterbird
-    ##osu-lazer-bin      
+    osu-lazer-bin      
     lunar-client
     hyfetch
     foliate
@@ -95,6 +105,21 @@
     wl-clipboard
     xfce.thunar
     appimage-run
-    bitwig-studio5-latest
+    vitetris
+    #wineWowPackages.stagingFull
+    zathura
+    spacedrive
+    slurp
+    swappy
+    grim
+    iamb
+    wlvncc
+    turbovnc
+    cutter
+    cutterPlugins.rz-ghidra
+    ffmpeg_7-full
+    rizin
   ];
-}
+} 
+
+
