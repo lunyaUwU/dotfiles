@@ -10,12 +10,12 @@
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
   networking.firewall.checkReversePath = false; 
   #services.xserver.videoDrivers = ["nvidia"];
- #security.pam.loginLimits = [
- #  { domain = "@kvm"; item = "memlock"; type = "soft"; value = "unlimited"; }
- #  { domain = "@kvm"; item = "memlock"; type = "hard"; value = "unlimited"; }
- #  { domain = "@libvirtd"; item = "memlock"; type = "soft"; value = "unlimited"; }
- #  { domain = "@libvirtd"; item = "memlock"; type = "hard"; value = "unlimited"; }
- #];
+  security.pam.loginLimits = [
+    { domain = "@kvm"; item = "memlock"; type = "soft"; value = "unlimited"; }
+    { domain = "@kvm"; item = "memlock"; type = "hard"; value = "unlimited"; }
+    { domain = "@libvirtd"; item = "memlock"; type = "soft"; value = "unlimited"; }
+    { domain = "@libvirtd"; item = "memlock"; type = "hard"; value = "unlimited"; }
+  ];
   hardware = {
     xone.enable = true;
     opentabletdriver= {

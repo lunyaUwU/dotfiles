@@ -3,8 +3,9 @@
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs;
     audio.url = "github:polygon/audio.nix";
-    nvim-conf.url = "github:lunyaUwU/nvim.nix";
-    nix-gaming.url = "github:lunyaUwU/nix-repo";
+    #nvim-conf.url = "github:lunyaUwU/nvim.nix";
+    nvim-conf.url = "git+file:../nvim.nix/.?dir=.";
+    nix-gaming.url = "github:fufexan/nix-gaming";
     nix-gaming.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = github:nix-community/home-manager;
     hyprlock.url = github:hyprwm/hyprlock;

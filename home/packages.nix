@@ -5,6 +5,8 @@
     substituters = ["https://lunya.cachix.org"];
     trusted-public-keys = ["lunya.cachix.org-1:dfij+/AsTSBE9hCPNIDd7dVGHpMi2P2HKSFIYUl5Zoo="];
   };
+  services.xonotic.enable = true;
+  services.xonotic.openFirewall = true;
   programs.steam.enable = true;
   programs.dconf.enable = true;
   programs.hyprland = {
@@ -20,13 +22,23 @@
     pkgs.vim
     pkgs.wget
     pkgs.curl
-    pkgs.git
 #    pkgs.fido2luks
  
   ];
+  programs.git.enable = true;
   #services.xserver.desktopManager.gnome.enable = true;
   programs.adb.enable = true;
   users.users.luna.packages = with pkgs; [
+    zed-editor
+    nodejs_22
+    lunar-client
+    gitoxide
+    vcv-rack
+    wineWowPackages.stagingFull
+    reaper
+    lmms
+    tunefish
+    ardour
     fwupd
     nix-gaming.packages.${pkgs.system}.osu-lazer-bin
     pciutils
@@ -44,15 +56,15 @@
     neovide
     flatpak
     #nitrokey-app2
-    yubikey-manager
+    #yubikey-manager
     direnv
     alacritty
     #ccgo13
     transmission-gtk
     icoutils
-    bitwarden
+    #bitwarden
     gamemode
-    ungoogled-chromium
+    #ungoogled-chromium
     inkscape-with-extensions
     pfetch
     owofetch
@@ -71,16 +83,17 @@
     tree
     home-manager
     #obsidian
-    keepassxc
+    #keepassxc
     kitty
     lshw
-    discord
+    #discord
+
     bottom
     linux-wifi-hotspot
     thunderbird	
-    betterbird
+   # betterbird
     osu-lazer-bin      
-    lunar-client
+    #lunar-client
     hyfetch
     foliate
     signal-desktop
@@ -94,7 +107,7 @@
     #ilocalsend
     geogebra6
     openttd
-    cinny-desktop
+  #  cinny-desktop
     gimp
     helix
     #rustup
@@ -118,8 +131,10 @@
     cutter
     cutterPlugins.rz-ghidra
     ffmpeg_7-full
+    typescript
     rizin
   ];
 } 
+
 
 
