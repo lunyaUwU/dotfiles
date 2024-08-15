@@ -821,10 +821,11 @@
       },
       "locked": {
         "dir": ".",
-        "dirtyRev": "1410fa5b5bf1c80f73389c4f3c88121f3b0df10b-dirty",
-        "dirtyShortRev": "1410fa5-dirty",
-        "lastModified": 1723209022,
-        "narHash": "sha256-kAT4YYhDOa3Ke6e8d9EDISfUqo+5ByINKhSMTMseBUE=",
+        "lastModified": 1723709090,
+        "narHash": "sha256-hqrFQXIHDjPHOYK/78buBYT8FgRmBnhOFpIyC6wkUoo=",
+        "ref": "refs/heads/main",
+        "rev": "31aba42e6e0f4237a2ca955f59ac6cad99ab88a7",
+        "revCount": 31,
         "type": "git",
         "url": "file:../nvim.nix/.?dir=."
       },
