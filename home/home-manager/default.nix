@@ -1,8 +1,6 @@
-{ config, lib, pkgs, home-manager, ... }:
+{pkgs, ... }:
 {
-  imports = [home-manager.nixosModules.home-manager];
 
-  home-manager.users.luna = {
     home.stateVersion = "23.11";
     imports = [./configs.nix];
 
@@ -19,6 +17,5 @@
       };
     };
 
-  };
   
 }

@@ -41,5 +41,18 @@
   services.xserver.xkb.layout = "de";
   services.printing.enable = true;
 
+  services.libinput.mouse.additionalOptions = ''
+  [Never Debounce]
+  MatchUdevType=mouse
+  ModelBouncingKeys=1
+  '';
+  
+  networking.firewall = {
+    allowedTCPPorts = [25565 19132 19133];
+    allowedUDPPortRanges = [
+      { from = 25565; to = 25566; }
+      { from = 19132; to = 19133; }
+    ];
+  };
 }
 

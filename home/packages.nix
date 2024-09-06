@@ -1,9 +1,10 @@
 { audio,config, lib, pkgs, nix-gaming,...}:
 {
   nixpkgs.config.allowUnfree = true;
+  services.xserver.desktopManager.gnome.enable = true; 
   nix.settings = {
-    substituters = ["https://lunya.cachix.org"];
-    trusted-public-keys = ["lunya.cachix.org-1:dfij+/AsTSBE9hCPNIDd7dVGHpMi2P2HKSFIYUl5Zoo="];
+    substituters = [ "https://cosmic.cachix.org/" ];
+    trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
   };
   services.xonotic.enable = true;
   services.xonotic.openFirewall = true;
@@ -28,12 +29,16 @@
   programs.git.enable = true;
   #services.xserver.desktopManager.gnome.enable = true;
   programs.adb.enable = true;
+  #hardware.system76.enableAll = true;
+  services.desktopManager.cosmic.enable = true;
   users.users.luna.packages = with pkgs; [
+    glew
+    obsidian
     zed-editor
     nodejs_22
     lunar-client
     gitoxide
-    vcv-rack
+    #vcv-rack
     wineWowPackages.stagingFull
     reaper
     lmms
@@ -64,7 +69,7 @@
     icoutils
     #bitwarden
     gamemode
-    #ungoogled-chromium
+    ungoogled-chromium
     inkscape-with-extensions
     pfetch
     owofetch
@@ -125,7 +130,7 @@
     slurp
     swappy
     grim
-    iamb
+    #iamb
     wlvncc
     turbovnc
     cutter
@@ -133,6 +138,7 @@
     ffmpeg_7-full
     typescript
     rizin
+    darktable
   ];
 } 
 

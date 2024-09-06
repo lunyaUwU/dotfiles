@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./home-manager
+ #   ./home-manager
     ./hardware.nix
     ../cachix.nix
     ./packages.nix
