@@ -1,4 +1,4 @@
-{...}:
+{pkgs,...}:
 
 {
   imports = [
@@ -25,4 +25,8 @@
       PermitRootLogin = "prohibit-password"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
     };
   };
+  environment.systemPackages = with pkgs;[
+    git
+    nvim
+  ];
  }
