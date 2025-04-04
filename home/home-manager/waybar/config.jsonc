@@ -8,8 +8,7 @@
     "height": 0,
     "modules-left": [
         "clock",
-        "custom/weather",
-        "wlr/workspaces"
+        "hyprland/workspaces"
     ],
     "modules-center": ["hyprland/window"],
     "modules-right": [
@@ -25,7 +24,7 @@
     "hyprland/window": {
         "format": "{}"
     },
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
@@ -63,8 +62,8 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{: %R   %d/%m}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "format": "{:%R}",
+        "tooltip-format": "<big>{:%A %F}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "backlight": {
         "device": "intel_backlight",

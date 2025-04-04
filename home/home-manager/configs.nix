@@ -1,5 +1,6 @@
 { config, lib, ... }:
 {
+  imports = [./ranger.nix];
   home.file.waybar = {
     source = ./waybar ;
     target = "/home/luna/.config/waybar";
@@ -16,9 +17,13 @@
     source = ./hypr ;
     target = "/home/luna/.config/hypr";
   };
-  home.file.nushell = {
-    source = ./nushell ;
-    target = "/home/luna/.config/nushell";
+  home.file.nushell1 = {
+    source = ./nushell/config.nu ;
+    target = "/home/luna/.config/nushell/config.nu";
+  };
+  home.file.nushell2 = {
+    source = ./nushell/env.nu ;
+    target = "/home/luna/.config/nushell/env.nu";
   };
   home.file.nheko = {
     source = ./nheko ;

@@ -3,6 +3,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./meow.nix
     ];
   boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.initrd.kernelModules = [
@@ -20,9 +21,19 @@
     "kvm.ignore_msrs=1"
  #  "video=vesafb:off,efifb:off"
   ];
+  hardware.nvidia = {
+    modesetting.enable = true;
+    nvidiaSettings = true;
+    open = false;
+  };
   boot.loader.systemd-boot.enable = true;
   boot.initrd.systemd.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   services.fwupd.enable = true;
   hardware.graphics.enable = true;
+  services.fprintd.enable =  true;
+  services.fprintd.tod.enable = true;
+  #services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090; #(If the vfs0090 Driver does not work, use the following driver)
+  services.fprintd.tod.driver = pkgs.libfprint-2-tod1-goodix;
+  nix.nixPath = [ "nixos-config=$HOME/dotfiles/" ];
 }

@@ -11,14 +11,19 @@
     ./hyprlock.nix
     ./tor.nix
     ./virtualisation.nix
+    ./jellyfin.nix
+    #./sql.nix
   ];
-  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   users.users.luna = {
     group = "kittens";
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "adbuser" "libvirtd" "kvm"]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "docker" "wheel" "networkmanager" "adbuser" "libvirtd" "kvm"]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;      
+  };
+  nix.settings = {
+    extra-trusted-public-keys = "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=";
+    extra-substituters = "https://devenv.cachix.org";
   };
   users.groups.kittens = {};
   programs.zsh.enable = true;
