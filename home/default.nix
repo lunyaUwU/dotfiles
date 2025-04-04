@@ -1,6 +1,8 @@
 { pkgs,... }:
 
 {
+  
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   imports = [
  #   ./home-manager
     ./hardware.nix
@@ -14,7 +16,6 @@
     ./jellyfin.nix
     #./sql.nix
   ];
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   users.users.luna = {
     group = "kittens";
     isNormalUser = true;
