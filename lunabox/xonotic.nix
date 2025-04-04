@@ -1,0 +1,7 @@
+{...}: 
+{
+  services.xonotic = {
+    enable = true;
+
+  };
+}
