@@ -5,6 +5,7 @@
     ./hardware-configuration.nix
     ./vaultwarden.nix
     ./xonotic.nix
+    ./akkoma.nix
   ];
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
