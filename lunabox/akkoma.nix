@@ -18,7 +18,7 @@
       };
       "Pleroma.Upload".base_url = "/var/lib/akkoma-upload";
       "Pleroma.Web.Endpoint" = {
-        url.host = "fedi.estrogen.today";
+        url.host = "fedi-test.estrogen.today";
       };
     };
   };
