@@ -21,13 +21,5 @@
       };
     };
   };
-  services.nginx = {
-    enable = true;
-
-    clientMaxBodySize = "16m";
-    recommendedTlsSettings = true;
-    recommendedOptimisation = true;
-    recommendedGzipSettings = true;
-  };
-}
+  }
 

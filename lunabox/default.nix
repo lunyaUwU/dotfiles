@@ -6,6 +6,7 @@
     ./vaultwarden.nix
     ./xonotic.nix
     ./akkoma.nix
+    ./nginx.nix
   ];
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
