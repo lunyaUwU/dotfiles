@@ -6,7 +6,7 @@
       enableACME = true;
       forceSSL = true;
     };
-
+    initDb.enable  = true;
   };
   services.akkoma.config = {
     ":pleroma" = {
