@@ -34,6 +34,12 @@
   };
   environment.systemPackages = with pkgs;[
     git
-    neovim
+    vim
   ];
+
+
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [ 80 443 ];
+  };
  }
