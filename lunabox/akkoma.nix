@@ -5,7 +5,6 @@
     nginx = {
       enableACME = true;
       forceSSL = true;
-      location = 1001;
       serverName = "fedi-test.estrogen.today";
     };
     initDb = {
