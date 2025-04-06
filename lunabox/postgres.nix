@@ -4,6 +4,7 @@
     enable = true;
     enableJIT = true;
     ensureUsers."akkoma" = {
+      name = "akkoma";
       ensureDBOwnership = true;
       ensureClauses.createrole = true;
     };
