@@ -1,4 +1,4 @@
-{...}:
+{pkgs,...}:
 {
   services.akkoma = {
     enable = true;
@@ -6,7 +6,11 @@
       enableACME = true;
       forceSSL = true;
     };
-    initDb.enable  = true;
+    initDb = {
+      enable  = true;
+      username = "akkoma";
+      password = null;
+    };
   };
   services.akkoma.config = {
     ":pleroma" = {
