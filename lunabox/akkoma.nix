@@ -21,10 +21,11 @@
         email = "lunyathegay@systemli.org";
         registration_open = false;
       };
+      configurable_from_database =  true;
       "Pleroma.Upload".base_url = "/var/lib/akkoma-upload";
       "Pleroma.Web.Endpoint" = {
         url.host = "fedi-test.estrogen.today";
-      };
+      }; 
     };
   };
   }
