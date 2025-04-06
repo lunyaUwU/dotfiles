@@ -4,6 +4,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./meow.nix
+      ./sops.nix
     ];
   boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.initrd.kernelModules = [

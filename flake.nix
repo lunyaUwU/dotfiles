@@ -31,12 +31,13 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    sops-nix.url = "github:Mic92/sops-nix";
   };
   outputs = { nur,audio,self, nixpkgs,home-manager,nix-gaming,
   #,c3d2-user,
   nvim-conf,hyprlock,
   #nixos-cosmic,
-  mixbus,inkstitch,ghostty,... }@attrs: {
+  mixbus,inkstitch,ghostty,sops-nix,... }@attrs: {
     nixosConfigurations= {
       shork = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -53,7 +54,7 @@
         modules = [
           ./lunabox
           {networking.hostName="lunabox";}
-
+          sops-nix.nixosModules.sops
         ];
 
       };
@@ -66,6 +67,8 @@
           ./home
           ./bara
           {networking.hostName = "bara";}
+          sops-nix.nixosModules.sops
+
           ];
       };
     };

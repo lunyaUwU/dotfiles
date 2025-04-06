@@ -7,6 +7,7 @@
     ./xonotic.nix
     ./akkoma.nix
     ./nginx.nix
+    ./sops.nix
   ];
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
