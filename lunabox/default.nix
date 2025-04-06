@@ -8,6 +8,7 @@
     ./akkoma.nix
     ./nginx.nix
     ./sops.nix
+    ./postgres.nix
   ];
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
