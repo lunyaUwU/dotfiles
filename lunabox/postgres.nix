@@ -10,6 +10,7 @@
       } 
     ];
     ensureDatabases = ["akkoma"];
+    ensureClauses.createrole = true;
     authentication = ''
     # TYPE  DATABASE        USER            ADDRESS                 METHOD
     local   all             all                                     peer
