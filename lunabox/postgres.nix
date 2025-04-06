@@ -6,7 +6,7 @@
     ensureUsers = [
       {
         name = "akkoma";
-
+        ensureDBOwnership = true;
       } 
     ];
     ensureDatabases = [
