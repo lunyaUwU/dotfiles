@@ -6,7 +6,11 @@
     ensureUsers = [
       {
         name = "akkoma";
+
       } 
+    ];
+    ensureDatabases = [
+      "akkoma"
     ];
     authentication = ''
     # TYPE  DATABASE        USER            ADDRESS                 METHOD

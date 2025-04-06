@@ -10,7 +10,7 @@
     ./sops.nix
     ./postgres.nix
   ];
-  
+  system.stateVersion = "25.05";  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings.download-buffer-size = 524288000;
   users.users.luna = {
