@@ -4,7 +4,9 @@
     enable = true;
     enableJIT = true;
     ensureUsers = [
-      "akkoma"
+      {
+        name = "akkoma";
+      } 
     ];
     authentication = ''
     # TYPE  DATABASE        USER            ADDRESS                 METHOD
