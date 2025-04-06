@@ -1,0 +1,14 @@
+keys: 
+  - &bara age10qh5xk4na94j73dgx3t6rlj5q7gshhh9eqzxamrjytxmxfdttfwq86kulw
+  - &lunabox age10jd58xpqpyf5ql7hn9aec3eamc83f6u9l0lvyru26ss7rrtt2gnqv4ardx
+creation_rules:
+  - path_regex: bara/[^/]+\.(yaml|json|env|ini)$
+    keygroups:   
+    - age :
+        - *bara
+        - *lunabox
+  - path_regex: lunabox/[^/]+\.(yaml|json|env|ini)$
+    keygroups:   
+    - age :
+        - *bara
+        - *lunabox
