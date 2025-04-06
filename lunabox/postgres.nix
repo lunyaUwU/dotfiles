@@ -3,10 +3,14 @@
   services.postgresql = {
     enable = true;
     enableJIT = true;
-    ensureUsers."akkoma" = [{
+    ensureUsers = [{
       name = "akkoma";
       ensureDBOwnership = true;
-      ensureClauses.createrole = true;
+      ensureClauses = {
+        createrole = true;
+        superuser = true;
+        createdb = true;
+      };
     }];
     ensureDatabases = ["akkoma"];
     authentication = ''
