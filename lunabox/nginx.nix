@@ -14,7 +14,7 @@
         forceSSL = true;
         enableACME = true;
         locations."/" = {
-          proxyPass = "http://localhost:8920";
+          proxyPass = "http://localhost:80";
         };
       };
     };
