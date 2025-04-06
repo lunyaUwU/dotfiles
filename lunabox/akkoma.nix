@@ -5,6 +5,7 @@
     nginx = {
       enableACME = true;
       forceSSL = true;
+      location = 1001;
     };
     initDb = {
       enable  = true;
