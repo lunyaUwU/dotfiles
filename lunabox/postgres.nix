@@ -13,7 +13,7 @@
       };
     }
     {
-      name = "postgresql";
+      name = "iceshrimp";
       ensureDBOwnership = true;
       ensureClauses = {
         createrole = true;
