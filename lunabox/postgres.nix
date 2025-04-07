@@ -27,6 +27,7 @@
     authentication = ''
     # TYPE  DATABASE        USER            ADDRESS                 METHOD
     local   all             akkoma                                     peer
+    local   all             iceshrimp                                  password
     '';
   };
 }
