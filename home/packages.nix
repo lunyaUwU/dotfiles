@@ -32,7 +32,7 @@
  
  };
   fonts.packages = with pkgs; [
-    rPackages.phosphoricons
+#    rPackages.phosphoricons
     pkgs.nerd-fonts.caskaydia-cove   
     pkgs.nerd-fonts.droid-sans-mono
   ];
