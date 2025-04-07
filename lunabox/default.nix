@@ -45,7 +45,10 @@
     vim
   ];
 
-  virtualisation.docker.enable = true;
+  virtualisation.docker.rootless = { 
+    enable = true;
+    setSocketVariable = true;
+  };
   networking.firewall = {
     enable = true;
     allowedTCPPorts = [ 80 443 ];
