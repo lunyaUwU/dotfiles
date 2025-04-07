@@ -45,6 +45,8 @@
     vim
     tmux
     dotnet-aspnetcore_9 
+    bash
+    corutils
   ];
 
   virtualisation.docker.rootless = { 
