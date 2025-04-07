@@ -23,10 +23,10 @@
     }
 
     ];
-    ensureDatabases = ["akkoma" "iceshrimp"];
+    ensureDatabases = ["akkoma"];
     authentication = ''
     # TYPE  DATABASE        USER            ADDRESS                 METHOD
-    local   all             all                                     peer
+    local   all             akkoma                                     peer
     '';
   };
 }
