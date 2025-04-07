@@ -11,7 +11,7 @@
     ./sops.nix
     ./postgres.nix
     ./jellyfin.nix
-    ./gotosocial.nix
+#    ./gotosocial.nix
   ];
   system.stateVersion = "25.05";  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

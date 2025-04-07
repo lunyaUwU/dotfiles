@@ -18,13 +18,13 @@
         };
       };
       
-      "gts.estrogen.today" = {
-        forceSSL = true;
-        enableACME = true;
-        locations."/" = {
-          proxyPass = "http://127.0.0.1:8080";
-        };
-      };
+#      "gts.estrogen.today" = {
+#        forceSSL = true;
+#        enableACME = true;
+#        locations."/" = {
+#          proxyPass = "http://127.0.0.1:8080";
+#        };
+#      };
       "shrimp.estrogen.today" = {
         forceSSL = true;
         enableACME = true;
