@@ -44,7 +44,7 @@
     git
     vim
     tmux
-    pkgs.dotnetPackages.aspnetcore_9_0-bin
+    dotnet-aspnetcore_9 
   ];
 
   virtualisation.docker.rootless = { 
