@@ -20,8 +20,8 @@
     enableACME = true;
       locations."/" = {
         proxyPass = "127.0.0.1:3500";
-        proxyWebsockets = true;
-        recommendedProxySettings = true;
+        #proxyWebsockets = true;
+        #recommendedProxySettings = true;
     };
   };
 
