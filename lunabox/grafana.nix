@@ -30,7 +30,10 @@
         enable = true;
         port = 9003;
         settings.process_names = [
-          { name = "*";  }
+          { name = "java";  }
+          { name = "Iceshrimp.Backend";  }
+          { name = "jellyfin";  }
+          { name = "grafana";  }
         ]
         ;
       };
