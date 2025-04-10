@@ -11,6 +11,8 @@
       fcitx5-nord
     ];
   };
+  services.xserver.windowManager.i3.enable = true;
+  services.xserver.enable = true;
   services.mullvad-vpn.enable = true;
   services.xserver.desktopManager.gnome.enable = true; 
   nix.settings = {
