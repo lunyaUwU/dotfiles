@@ -29,6 +29,10 @@
       process = {
         enable = true;
         port = 9003;
+        settings.process_names = [
+          { name = "*";  }
+        ]
+        ;
       };
       nginx = {
         enable = true;

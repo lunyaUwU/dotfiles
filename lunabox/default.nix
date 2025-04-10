@@ -5,8 +5,8 @@
     ./hardware-configuration.nix
     ./vaultwarden.nix
     ./xonotic.nix
-    ./akkoma.nix
-    ./akkoma-conf.nix
+#    ./akkoma.nix
+#    ./akkoma-conf.nix
     ./nginx.nix
     ./sops.nix
     ./postgres.nix
