@@ -10,19 +10,10 @@
         # and Port
         http_port = 3500;
         # Grafana needs to know on which domain and URL it's running
-        domain = "grafana.estrogen.today";
+        domain = "estrogen.today";
+        root_url = "https://estrogen.today/grafana/";
         serve_from_sub_path = true;
       };
     };
   };
-  services.nginx.virtualHosts."grafana.estrogen.today" = {
-    addSSL = true;
-    enableACME = true;
-      locations."/" = {
-        proxyPass = "127.0.0.1:3500";
-        #proxyWebsockets = true;
-        #recommendedProxySettings = true;
-    };
-  };
-
 }

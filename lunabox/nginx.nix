@@ -36,6 +36,11 @@
               return 301 http://shrimp.estrogen.today$request_uri;
             '';
           };
+          "/grafana" = {
+            proxyPass = "http://127.0.0.1:3050";
+            proxyWebsockets = true;
+            recommendedProxySettings = true;
+          };
         };
       };
       
