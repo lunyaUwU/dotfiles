@@ -26,12 +26,24 @@
         enabledCollectors = [ "systemd" ];
         port = 9002;
       };
+      process = {
+        enable = true;
+        port = 9003;
+      };
+      nginx = {
+        enable = true;
+        port = 9004;
+      };
     };
     scrapeConfigs = [
       {
         job_name = "chrysalis";
         static_configs = [{
-          targets = [ "127.0.0.1:${toString config.services.prometheus.exporters.node.port}" ];
+          targets = [ 
+          "127.0.0.1:${toString config.services.prometheus.exporters.node.port}" 
+          "127.0.0.1:${toString config.services.prometheus.exporters.process.port}" 
+          "127.0.0.1:${toString config.services.prometheus.exporters.nginx.port}" 
+          ];
         }];
       }
     ];
