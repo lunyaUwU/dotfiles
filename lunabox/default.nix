@@ -49,6 +49,7 @@
     dotnet-aspnetcore_9 
     bash
     coreutils
+    python311
   ];
 
   virtualisation.docker.rootless = { 
