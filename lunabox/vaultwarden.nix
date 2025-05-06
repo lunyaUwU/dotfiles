@@ -5,6 +5,7 @@
 
   services.vaultwarden = {
     enable = true;
+    environmentFile = "/var/lib/vaultwarden.env"; 
     config = {
       DOMAIN = "https://bitwarden.example.com";
       SIGNUPS_ALLOWED = false;
