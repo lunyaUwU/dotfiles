@@ -1,4 +1,4 @@
-{mail-server,...}:
+{mail-server,config,...}:
 
 {
   imports = [mail-server.nixosModules.default];
@@ -22,5 +22,17 @@
     # down nginx and opens port 80.
     certificateScheme = "acme-nginx";
   }; 
-
+    services.roundcube = {
+     enable = true;
+     # this is the url of the vhost, not necessarily the same as the fqdn of
+     # the mailserver
+     hostName = "webmail.lunyathe.gay";
+     extraConfig = ''
+       # starttls needed for authentication, so the fqdn required to match
+       # the certificate
+       $config['smtp_host'] = "tls://${config.mailserver.fqdn}";
+       $config['smtp_user'] = "%u";
+       $config['smtp_pass'] = "%p";
+     '';
+  };
 }
