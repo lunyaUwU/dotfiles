@@ -21,12 +21,22 @@
         createdb = true;
       };
     }
+    {
+      name = "vaultwarden";
+      ensureDBOwnership = true;
+      ensureClauses = {
+        createrole = true;
+        superuser = true;
+        createdb = true;
+      };
+    }
 
     ];
-    ensureDatabases = ["akkoma" "iceshrimp"];
+    ensureDatabases = ["akkoma" "iceshrimp" "vaultwarden"];
     authentication = ''
     # TYPE  DATABASE        USER            ADDRESS                 METHOD
     local   all             akkoma                                     peer
+    local   all             vaultwarden                                password
     local   all             iceshrimp                                  password
     '';
   };
