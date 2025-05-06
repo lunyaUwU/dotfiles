@@ -10,6 +10,7 @@
     ./nginx.nix
     ./sops.nix
     ./postgres.nix
+    ./mail.nix
     ./jellyfin.nix
 #    ./gotosocial.nix
     ./grafana.nix

@@ -64,6 +64,8 @@
     ghostty
     #ghostty.packages.x86_64-linux.default
     #discordo
+    mpvpaper
+    eww
     yazi
     ranger
     (discord.override {

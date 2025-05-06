@@ -31,13 +31,18 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    mail-server = {
+      url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
+      inputs.nixpkgs.follows = "nixpkgs";
+
+    };
     sops-nix.url = "github:Mic92/sops-nix";
   };
   outputs = { nur,audio,self, nixpkgs,home-manager,nix-gaming,
   #,c3d2-user,
   nvim-conf,hyprlock,
   #nixos-cosmic,
-  mixbus,inkstitch,ghostty,sops-nix,... }@attrs: {
+  mixbus,inkstitch,ghostty,sops-nix,mail-server,... }@attrs: {
     nixosConfigurations= {
       shork = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
