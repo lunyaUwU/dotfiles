@@ -1,4 +1,4 @@
-{mail-server,config,...}:
+{mail-server,config,pkgs,...}:
 
 {
   imports = [mail-server.nixosModules.default];
@@ -35,6 +35,7 @@
        $config['smtp_user'] = "%u";
        $config['smtp_pass'] = "%p";
        $config['enigma_pgp_homedir'] = "/var/enigma_pgp"; 
+       $config['enigma_pgp_driver'] = "${pkgs.gnupg}";
      '';
   };
 }
