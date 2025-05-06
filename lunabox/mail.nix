@@ -1,7 +1,7 @@
 {mail-server,...}:
 
 {
-  import = [mail-server.nixosModules.default];
+  imports = [mail-server.nixosModules.default];
 
   
   mailserver = {
