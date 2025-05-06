@@ -35,7 +35,7 @@
        $config['smtp_user'] = "%u";
        $config['smtp_pass'] = "%p";
        $config['enigma_pgp_homedir'] = "/var/enigma_pgp"; 
-       $config['enigma_pgp_driver'] = "${pkgs.gnupg}";
+       $config['enigma_pgp_driver'] = "${pkgs.gnupg}/bin/gpg";
      '';
   };
 }
