@@ -6,6 +6,7 @@
   services.vaultwarden = {
     enable = true;
     environmentFile = "/var/lib/vaultwarden.env"; 
+    dbBackend = "postgresql";
     config = {
       DOMAIN = "https://bitwarden.example.com";
       SIGNUPS_ALLOWED = false;
