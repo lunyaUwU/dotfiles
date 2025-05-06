@@ -10,11 +10,21 @@
     recommendedOptimisation = true;
     recommendedGzipSettings = true;
     virtualHosts = {
+      
       "jellyfin.estrogen.today" = {
         forceSSL = true;
         enableACME = true;
         locations."/" = {
           proxyPass = "http://127.0.0.1:8096";
+        };
+      };
+      "vault.estrogen.today" = {
+        forceSSL = true;
+        enableACME = true;
+        locations = {
+          "/" = {
+            proxyPass = "http://localhost:8080";
+          };
         };
       };
       "estrogen.today" = {
@@ -59,7 +69,16 @@
           proxyPass = "http://127.0.0.1:3000";
         };
       };
-
+      "postiz.lunyathe.gay" = {
+        forceSSL = true;
+        enableACME = true;
+        locations = {
+          "/" = {
+            proxyPass = "http://localhost:5000";
+          };
+        };
+        
+      };
 
     };
   };
