@@ -17,18 +17,19 @@
         aliases = ["admin@lunyathe.gay" "booking@lunyathe.gay" "admin@estrogen.today"];
       };
     };
-    services.postfixadmin = {
+    
+    # Use Let's Encrypt certificates. Note that this needs to set up a stripped
+    # down nginx and opens port 80.
+    certificateScheme = "acme-nginx";
+  };
+  services.postfixadmin = {
       #enable = true;
       setupPasswordFile = "/var/postfixadmin-password";
       hostName = "mailadmin.estrogen.today";
       adminEmail = "adminEmail@estrogen.today";
 
-    };
-    # Use Let's Encrypt certificates. Note that this needs to set up a stripped
-    # down nginx and opens port 80.
-    certificateScheme = "acme-nginx";
-  }; 
-    services.roundcube = {
+  };
+  services.roundcube = {
      enable = true;
      plugins = ["enigma"];
      # this is the url of the vhost, not necessarily the same as the fqdn of
