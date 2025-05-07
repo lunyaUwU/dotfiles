@@ -29,7 +29,7 @@
       adminEmail = "adminEmail@estrogen.today";
       extraConfig = ''
         $CONF['setup_password'] = file_get_contents('/var/postfixadmin/admin-password');
-
+        ?>
       '';
       #database.host = "localhost";
   };
