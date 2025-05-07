@@ -14,7 +14,7 @@
     loginAccounts = {
       "luna@lunyathe.gay" = {
         hashedPasswordFile = "/var/luna-hash-file";
-        aliases = ["admin@lunyathe.gay" "booking@lunyathe.gay"];
+        aliases = ["admin@lunyathe.gay" "booking@lunyathe.gay" "admin@estrogen.today"];
       };
     };
 
@@ -27,7 +27,7 @@
      plugins = ["enigma"];
      # this is the url of the vhost, not necessarily the same as the fqdn of
      # the mailserver
-     hostName = "webmail.lunyathe.gay";
+     hostName = "webmail.estrogen.today";
      extraConfig = ''
        # starttls needed for authentication, so the fqdn required to match
        # the certificate
