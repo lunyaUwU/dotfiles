@@ -13,8 +13,11 @@
     # nix-shell -p mkpasswd --run 'mkpasswd -sm bcrypt'
     loginAccounts = {
       "luna@lunyathe.gay" = {
-        hashedPasswordFile = "/var/luna-hash-file";
-        aliases = ["admin@lunyathe.gay" "booking@lunyathe.gay" "admin@estrogen.today"];
+        hashedPasswordFile = "/var/hashes/luna";
+        aliases = ["admin@lunyathe.gay" "booking@lunyathe.gay" "admin@estrogen.today" "luna@estrogen.today"];
+      };
+      "jadetopaz@estrogen.today" = {
+        hashedPasswordFile = "/var/hashes/jadetopaz";
       };
     };
     
