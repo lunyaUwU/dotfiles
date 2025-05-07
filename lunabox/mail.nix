@@ -23,11 +23,11 @@
     certificateScheme = "acme-nginx";
   };
   services.postfixadmin = {
-      #enable = true;
-      setupPasswordFile = "/var/postfixadmin-password";
+      enable = true;
+      setupPasswordFile = "/var/postfixadmin/admin-password";
       hostName = "mailadmin.estrogen.today";
       adminEmail = "adminEmail@estrogen.today";
-
+      database.host = "localhost";
   };
   services.roundcube = {
      enable = true;
