@@ -27,7 +27,7 @@
       setupPasswordFile = "/var/postfixadmin/admin-password";
       hostName = "mailadmin.estrogen.today";
       adminEmail = "adminEmail@estrogen.today";
-      database.host = "localhost";
+      #database.host = "localhost";
   };
   services.roundcube = {
      enable = true;
