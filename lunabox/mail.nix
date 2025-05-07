@@ -7,7 +7,7 @@
   mailserver = {
     enable = true;
     fqdn = "mail.estrogen.today";
-    domains = [ "mail.estrogen.today" "lunyathe.gay" ];
+    domains = [ "estrogen.today" "lunyathe.gay" ];
 
     # A list of all login accounts. To create the password hashes, use
     # nix-shell -p mkpasswd --run 'mkpasswd -sm bcrypt'
