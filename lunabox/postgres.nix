@@ -30,14 +30,23 @@
         createdb = true;
       };
     }
-
+    {
+      name = "postfixadmin";
+      ensureDBOwnership = true;
+      ensureClauses = {
+        createrole = true;
+        superuser = true;
+        createdb = true;
+      };
+    }
     ];
-    ensureDatabases = ["akkoma" "iceshrimp" "vaultwarden"];
+    ensureDatabases = ["akkoma" "iceshrimp" "vaultwarden" "postfixadmin"];
     authentication = ''
     # TYPE  DATABASE        USER            ADDRESS                 METHOD
     local   all             akkoma                                     peer
     local   all             vaultwarden                                password
     local   all             iceshrimp                                  password
+    local   all             postfixadmin                               password
     '';
   };
 }
