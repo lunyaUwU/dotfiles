@@ -15,6 +15,9 @@
       dbtype = "pgsql";
     };
   };
+  systemd.services.nextcloud-setup.serviceConfig = {
+    RequiresMountsFor = [ "/var/lib/nextcloud" ];
+  };
   services.nginx.virtualHosts.${config.services.nextcloud.hostName} = {
 
     forceSSL = true;
