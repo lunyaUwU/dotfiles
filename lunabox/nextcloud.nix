@@ -1,7 +1,8 @@
-{config,...}:
+{config,pkgs,...}:
 {
   services.nextcloud = {
     enable = true;
+    package = pkgs.nextcloud31;
     hostName = "cloud.estrogen.today"; 
     database.createLocally = true;
     configureRedis = true;
