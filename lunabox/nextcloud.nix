@@ -7,7 +7,6 @@
     configureRedis = true;
     maxUploadSize = "32G";
     https = true;
-    enableBrokenCiphersForSSE = false;
 
     config = { 
       adminuser = "admin";
