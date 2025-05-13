@@ -27,6 +27,7 @@ SUBSYSTEM=="vfio", OWNER="root", GROUP="kvm"
  # https://github.com/solokeys/solo2-cli/blob/main/70-solo2.rules
    services.udev.packages = [
      pkgs.yubikey-personalization
+     pkgs.teensy-udev-rules
      (pkgs.writeTextFile {
      name = "wally_udev";
      text = ''

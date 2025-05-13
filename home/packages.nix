@@ -11,8 +11,9 @@
       fcitx5-nord
     ];
   };
-  services.xserver.windowManager.i3.enable = true;
   services.xserver.enable = true;
+  environment.pathsToLink = [ "/libexec" ];
+  services.xserver.windowManager.i3.enable = true;
   services.mullvad-vpn.enable = true;
   services.xserver.desktopManager.gnome.enable = true; 
   nix.settings = {
@@ -55,6 +56,8 @@
   users.users.luna.packages = with pkgs; [
     (cutter.withPlugins (ps: with ps; [ jsdec rz-ghidra sigdb ]))
     #pkgs.nur.repos.Redrield.binaryninja 
+    tytools
+    m8c
     librewolf-wayland
     mommy
     fastfetch

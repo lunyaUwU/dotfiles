@@ -8,7 +8,7 @@
     ./hardware.nix
     ../cachix.nix
     ./packages.nix
-  #  ./solokey.nix
+    ./solokey.nix
     ./nvim.nix
     ./hyprlock.nix
     ./tor.nix
