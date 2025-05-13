@@ -8,7 +8,10 @@
     configureRedis = true;
     maxUploadSize = "32G";
     https = true;
-
+    extraApps = {
+      inherit (config.services.nextcloud.package.packages.apps) news contacts calendar tasks;
+    };
+    extraAppsEnable = true;
     config = { 
       adminuser = "admin";
       adminpassFile = "/var/nextcloud-pw";
@@ -19,7 +22,7 @@
     RequiresMountsFor = [ "/var/lib/nextcloud" ];
   };
   services.nginx.virtualHosts.${config.services.nextcloud.hostName} = {
-
+    
     forceSSL = true;
     enableACME = true;
   };
