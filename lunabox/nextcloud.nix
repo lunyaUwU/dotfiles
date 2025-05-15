@@ -26,7 +26,7 @@
     forceSSL = true;
     enableACME = true;
   };
-  onlyoffice = {
+  services.onlyoffice = {
     enable = true;
     hostName = "office.estrogen.today";
   };
