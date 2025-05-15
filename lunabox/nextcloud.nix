@@ -26,6 +26,12 @@
     forceSSL = true;
     enableACME = true;
   };
+  services.nginx.virtualHosts.${config.services.onlyoffice.hostname} = {
+    
+    forceSSL = true;
+    enableACME = true;
+  };
+
   services.onlyoffice = {
     enable = true;
     hostname = "office.estrogen.today";
