@@ -28,7 +28,7 @@
   };
   services.onlyoffice = {
     enable = true;
-    hostName = "office.estrogen.today";
+    hostname = "office.estrogen.today";
   };
 }
 
