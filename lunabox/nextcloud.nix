@@ -26,4 +26,10 @@
     forceSSL = true;
     enableACME = true;
   };
+  onlyoffice = {
+    enable = true;
+    hostName = "office.estrogen.today";
+  };
 }
+
+
