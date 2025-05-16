@@ -64,5 +64,8 @@
     allowedTCPPorts = [ 80 443 25565 ];
     allowedUDPPorts = [25565];
   };
+  nixpkgs.config.permittedInsecurePackages = [
+    "jitsi-meet-1.0.8043"
+  ];
   nixpkgs.config.allowUnfree = true;
  }
