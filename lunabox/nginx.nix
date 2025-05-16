@@ -10,7 +10,7 @@
     recommendedOptimisation = true;
     recommendedGzipSettings = true;
     virtualHosts = {
-      
+    
       "jellyfin.estrogen.today" = {
         forceSSL = true;
         enableACME = true;

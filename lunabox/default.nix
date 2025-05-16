@@ -5,6 +5,7 @@
     ./hardware-configuration.nix
     ./vaultwarden.nix
     ./xonotic.nix
+    ./jitsy.nix 
 #    ./akkoma.nix
 #    ./akkoma-conf.nix
     ./nginx.nix
