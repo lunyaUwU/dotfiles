@@ -5,5 +5,4 @@
     enable = true;
     hostName = "meet.estrogen.today";
   };
-
 }

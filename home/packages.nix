@@ -25,6 +25,7 @@
     enable = true;
     pinentryPackage = pkgs.pinentry-gnome3;
   };
+  programs.sway.enable = true;
   services.flatpak.enable = true;
   services.xonotic.enable = true;
   services.xonotic.openFirewall = true;

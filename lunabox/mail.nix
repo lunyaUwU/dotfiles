@@ -14,7 +14,13 @@
     loginAccounts = {
       "luna@lunyathe.gay" = {
         hashedPasswordFile = "/var/hashes/luna";
-        aliases = ["admin@lunyathe.gay" "booking@lunyathe.gay" "admin@estrogen.today" "luna@estrogen.today"];
+        aliases = [
+          "admin@lunyathe.gay" 
+          "booking@lunyathe.gay" 
+          "admin@estrogen.today" 
+          "luna@estrogen.today"
+          "wallet@estrogen.today"
+          ];
       };
       "jadetopaz@estrogen.today" = {
         hashedPasswordFile = "/var/hashes/jadetopaz";
