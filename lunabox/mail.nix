@@ -19,7 +19,7 @@
           "booking@lunyathe.gay" 
           "admin@estrogen.today" 
           "luna@estrogen.today"
-          "wallet@estrogen.today"
+          "wallet@lunyathe.gay"
           ];
       };
       "jadetopaz@estrogen.today" = {
