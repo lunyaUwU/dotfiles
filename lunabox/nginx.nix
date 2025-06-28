@@ -52,7 +52,8 @@
             recommendedProxySettings = true;
           };
         };
-        "whereis.arson.today" = {
+      };
+      "whereis.arson.today" = {
           forceSSL = true;
           enableACME = true;
           locations."/" = {
@@ -62,7 +63,6 @@
 
           };
         };
-      };
       
       
 #      "gts.estrogen.today" = {
