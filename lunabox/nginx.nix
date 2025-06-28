@@ -52,6 +52,16 @@
             recommendedProxySettings = true;
           };
         };
+        "whereis.arson.today" = {
+          forceSSL = true;
+          enableACME = true;
+          locations."/" = {
+           extraConfig = ''
+              return 301 https://traewelling.de/@rampagerslife;
+            '';
+
+          };
+        };
       };
       
       

@@ -30,6 +30,8 @@
       powerOnBoot = true;
     };
     pulseaudio.enable = false;
+    usb-modeswitch.enable=true;
+    xpadneo.enable = true;
   };
   services.pipewire = {
     pulse.enable = true;

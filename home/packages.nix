@@ -57,6 +57,12 @@
   users.users.luna.packages = with pkgs; [
     (cutter.withPlugins (ps: with ps; [ jsdec rz-ghidra sigdb ]))
     #pkgs.nur.repos.Redrield.binaryninja 
+    fortls
+    gfortran9
+    helix
+    gcc
+    oversteer
+    wine64Packages.staging
     tytools
     m8c
     librewolf-wayland
