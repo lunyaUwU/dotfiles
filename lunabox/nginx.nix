@@ -63,6 +63,26 @@
 
           };
         };
+      "arson.today" = {
+          forceSSL = true;
+          enableACME = true;
+          locations."/" = {
+           extraConfig = ''
+              return 301 https://girldick.gay/@rampagerslife;
+            '';
+
+          };
+        };
+       "whereis.lunyathe.gay" = {
+          forceSSL = true;
+          enableACME = true;
+          locations."/" = {
+           extraConfig = ''
+              return 301 https://traewelling.de/@lunya;
+            '';
+
+          };
+        };
       
       
 #      "gts.estrogen.today" = {
@@ -78,16 +98,6 @@
         locations."/" = {
           proxyPass = "http://127.0.0.1:3000";
         };
-      };
-      "postiz.lunyathe.gay" = {
-        forceSSL = true;
-        enableACME = true;
-        locations = {
-          "/" = {
-            proxyPass = "http://localhost:5000";
-          };
-        };
-        
       };
 
     };

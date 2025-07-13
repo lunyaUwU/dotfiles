@@ -57,6 +57,7 @@
   users.users.luna.packages = with pkgs; [
     (cutter.withPlugins (ps: with ps; [ jsdec rz-ghidra sigdb ]))
     #pkgs.nur.repos.Redrield.binaryninja 
+    feather
     fortls
     gfortran9
     helix
