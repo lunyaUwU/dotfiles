@@ -8,7 +8,7 @@
     enable = true;
     fqdn = "mail.estrogen.today";
     domains = [ "estrogen.today" "lunyathe.gay" ];
-
+    enableManageSieve = true;
     # A list of all login accounts. To create the password hashes, use
     # nix-shell -p mkpasswd --run 'mkpasswd -sm bcrypt'
     loginAccounts = {
