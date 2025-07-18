@@ -56,7 +56,8 @@
        $config['smtp_pass'] = "%p";
        $config['enigma_pgp_homedir'] = "/var/enigma_pgp"; 
        $config['enigma_pgp_binary'] = "${pkgs.gnupg}/bin/gpg2";
-       $config['managesieve_host'] = 'estrogen.today';
+       $config['managesieve_host'] = "estrogen.today";
+       $config['managesieve_debug'] = false;
      '';
   };
 }
