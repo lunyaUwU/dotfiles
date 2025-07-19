@@ -58,7 +58,7 @@
        $config['enigma_pgp_binary'] = "${pkgs.gnupg}/bin/gpg2";
        $config['managesieve_host'] = "estrogen.today";
        $config['managesieve_debug'] = false;
-       $config['managesieve_auth_type'] = 'LOGIN';
+       $config['managesieve_auth_type'] = 'PLAIN';
      '';
   };
 }
