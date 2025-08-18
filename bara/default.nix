@@ -20,7 +20,8 @@
  #"vfio.enable_unsafe_noiommu_mode=1"
  #  "vfio-pci.ids=10de:1d16"
     "kvm.ignore_msrs=1"
- #  "video=vesafb:off,efifb:off"
+    "i8042.reset" "i8042.nomux"    
+#"video=vesafb:off,efifb:off"
   ];
   hardware.nvidia = {
     modesetting.enable = true;

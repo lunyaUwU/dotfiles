@@ -12,13 +12,15 @@
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
   #networking.firewall.checkReversePath = false; 
 
-  #services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = ["nvidia"];
   security.pam.loginLimits = [
     { domain = "@kvm"; item = "memlock"; type = "soft"; value = "unlimited"; }
     { domain = "@kvm"; item = "memlock"; type = "hard"; value = "unlimited"; }
     { domain = "@libvirtd"; item = "memlock"; type = "soft"; value = "unlimited"; }
     { domain = "@libvirtd"; item = "memlock"; type = "hard"; value = "unlimited"; }
   ];
+  services.pulseaudio.zeroconf.discovery.enable =  true;
+
   hardware = {
     xone.enable = true;
     opentabletdriver= {

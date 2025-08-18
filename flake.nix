@@ -3,6 +3,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     #nixpkgs.url = github:NixOS/nixpkgs;
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     audio.url = "github:polygon/audio.nix";
     nvim-conf = {
       url = "github:lunyaUwU/nvim.nix";
@@ -42,6 +43,7 @@
   #,c3d2-user,
   nvim-conf,hyprlock,
   #nixos-cosmic,
+  nixos-hardware,
   mixbus,inkstitch,ghostty,sops-nix,mail-server,... }@attrs: {
     nixosConfigurations= {
       shork = nixpkgs.lib.nixosSystem {
@@ -50,17 +52,17 @@
         modules = [ 
           ./home
           ./shork
-          {networking.hostName = "shork";}
-          ];
-      };
-      lunabox = nixpkgs.lib.nixosSystem {
-        system = "aarch64-linux";
-        specialArgs  = attrs;
-        modules = [
-          ./lunabox
-          {networking.hostName="lunabox";}
-          sops-nix.nixosModules.sops
+        {networking.hostName = "shork";}
         ];
+    };
+    lunabox = nixpkgs.lib.nixosSystem {
+      system = "aarch64-linux";
+      specialArgs  = attrs;
+      modules = [
+        ./lunabox
+        {networking.hostName="lunabox";}
+        sops-nix.nixosModules.sops
+        nixos-hardware.nixosModules.lenovo-ideapad-slim-5];
 
       };
       bara = nixpkgs.lib.nixosSystem {
