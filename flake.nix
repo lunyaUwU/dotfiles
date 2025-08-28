@@ -62,7 +62,7 @@
         ./lunabox
         {networking.hostName="lunabox";}
         sops-nix.nixosModules.sops
-        nixos-hardware.nixosModules.lenovo-ideapad-slim-5];
+        ];
 
       };
       bara = nixpkgs.lib.nixosSystem {
@@ -75,7 +75,7 @@
           ./bara
           {networking.hostName = "bara";}
           sops-nix.nixosModules.sops
-
+	  nixos-hardware.nixosModules.lenovo-ideapad-slim-5
           ];
       };
     };
