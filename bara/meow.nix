@@ -8,14 +8,12 @@ specialisation = {
           libvirtd = {
             enable = true;
             qemu = {
-              ovmf.enable = true;
-              ovmf.packages = [ pkgs.OVMFFull.fd pkgs.pkgsCross.aarch64-multiplatform.OVMF.fd ];
               runAsRoot = false;
               swtpm.enable = true;
             };
           };
         };
-        users.users.luna.packages = with pkgs; [ virtio-win qemu_full quickemu virt-manager libguestfs ];
+        users.users.luna.packages = with pkgs; [quickemu virt-manager ];
         boot = {
           initrd.availableKernelModules = [ "pci_stub" "vfio" "vfio-pci" "vfio_iommu_type1" "nouveau" "nvidiafb" ];
           initrd.kernelModules = [ "vfio_pci" "vfio" "nouveau"];
@@ -38,14 +36,12 @@ specialisation = {
           libvirtd = {
             enable = true;
             qemu = {
-              ovmf.enable = true;
-              ovmf.packages = [ pkgs.OVMFFull.fd pkgs.pkgsCross.aarch64-multiplatform.OVMF.fd ];
               runAsRoot = false;
               swtpm.enable = true;
             };
           };
         };
-        users.users.luna.packages = with pkgs; [ virtio-win qemu_full quickemu virt-manager libguestfs ];
+        users.users.luna.packages = with pkgs; [quickemu virt-manager ];
         boot = {
           initrd.availableKernelModules = [ "pci_stub" "vfio" "vfio-pci" "vfio_iommu_type1" "nouveau" "nvidiafb" ];
           initrd.kernelModules = [ "vfio_pci" "vfio" "nouveau"];
