@@ -11,7 +11,7 @@
     ./nginx.nix
     ./sops.nix
     ./postgres.nix
-   # ./mail.nix
+    ./mail.nix
     #./jellyfin.nix
 #    ./gotosocial.nix
     #./nextcloud.nix
