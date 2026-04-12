@@ -12,6 +12,7 @@
     stateVersion = 3;
     # A list of all login accounts. To create the password hashes, use
     # nix-shell -p mkpasswd --run 'mkpasswd -sm bcrypt'
+    x509.useACMEHost = config.mailserver.fqdn;
     loginAccounts = {
       "luna@lunyathe.gay" = {
         hashedPasswordFile = "/var/hashes/luna";
@@ -30,7 +31,6 @@
     
     # Use Let's Encrypt certificates. Note that this needs to set up a stripped
     # down nginx and opens port 80.
-    certificateScheme = "acme-nginx";
   };
   services.roundcube = {
      enable = false;
