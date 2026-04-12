@@ -10,7 +10,7 @@
     recommendedOptimisation = true;
     recommendedGzipSettings = true;
     virtualHosts = {
-      "mail.estrogen.today" {
+      "mail.estrogen.today" =  {
         forceSSL = true;
         enableACME = true;
       
