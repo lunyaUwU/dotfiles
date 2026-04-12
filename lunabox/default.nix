@@ -4,18 +4,18 @@
   imports = [
     ./hardware-configuration.nix
     ./vaultwarden.nix
-    ./xonotic.nix
-    ./jitsy.nix 
+   # ./xonotic.nix
+   # ./jitsy.nix 
 #    ./akkoma.nix
 #    ./akkoma-conf.nix
     ./nginx.nix
     ./sops.nix
     ./postgres.nix
-    ./mail.nix
-    ./jellyfin.nix
+   # ./mail.nix
+    #./jellyfin.nix
 #    ./gotosocial.nix
-    ./nextcloud.nix
-    ./grafana.nix
+    #./nextcloud.nix
+   # ./grafana.nix
   ];
   system.stateVersion = "25.05";  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

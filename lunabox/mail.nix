@@ -32,19 +32,8 @@
     # down nginx and opens port 80.
     certificateScheme = "acme-nginx";
   };
-  services.postfixadmin = {
-      enable = true;
-      setupPasswordFile = "/var/postfixadmin/admin-password";
-      hostName = "mailadmin.estrogen.today";
-      adminEmail = "adminEmail@estrogen.today";
-      extraConfig = ''
-        $CONF['setup_password'] = file_get_contents('/var/postfixadmin/admin-password');
-        ?>
-      '';
-      #database.host = "localhost";
-  };
   services.roundcube = {
-     enable = true;
+     enable = false;
      plugins = ["enigma" "managesieved"];
      # this is the url of the vhost, not necessarily the same as the fqdn of
      # the mailserver

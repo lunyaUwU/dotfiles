@@ -1,7 +1,7 @@
 
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     #nixpkgs.url = github:NixOS/nixpkgs;
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     audio.url = "github:polygon/audio.nix";
@@ -34,7 +34,7 @@
     };
     mail-server = {
       url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
-      inputs.nixpkgs.follows = "nixpkgs";
+    #:  inputs.nixpkgs.follows = "nixpkgs";
 
     };
     sops-nix.url = "github:Mic92/sops-nix";
