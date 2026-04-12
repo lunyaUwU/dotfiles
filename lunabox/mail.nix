@@ -2,9 +2,7 @@
 
 {
   imports = [mail-server.nixosModules.default];
-  services.nginx.virtualHosts.${config.mailserver.fqdn}.enableACME = true;
-  
-  mailserver = {
+    mailserver = {
     enable = true;
     fqdn = "mail.estrogen.today";
     domains = [ "estrogen.today" "lunyathe.gay" ];
