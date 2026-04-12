@@ -33,7 +33,7 @@
     # down nginx and opens port 80.
   };
   services.roundcube = {
-     enable = false;
+     enable = true;
      plugins = ["enigma" "managesieved"];
      # this is the url of the vhost, not necessarily the same as the fqdn of
      # the mailserver
