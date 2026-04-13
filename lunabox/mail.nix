@@ -10,7 +10,10 @@
     stateVersion = 3;
     # A list of all login accounts. To create the password hashes, use
     # nix-shell -p mkpasswd --run 'mkpasswd -sm bcrypt'
-    x509.useACMEHost = config.mailserver.fqdn;
+    x509 = {
+      certificateFile = "/var/lib/acme/mail.estrogen.today/fullchain.pem";
+      privateKeyFile = "/var/lib/acme/mail.estrogen.today/key.pem"
+    };
     loginAccounts = {
       "luna@lunyathe.gay" = {
         hashedPasswordFile = "/var/hashes/luna";
