@@ -12,7 +12,7 @@
     # nix-shell -p mkpasswd --run 'mkpasswd -sm bcrypt'
     x509 = {
       certificateFile = "/var/lib/acme/mail.estrogen.today/fullchain.pem";
-      privateKeyFile = "/var/lib/acme/mail.estrogen.today/key.pem"
+      privateKeyFile = "/var/lib/acme/mail.estrogen.today/key.pem";
     };
     loginAccounts = {
       "luna@lunyathe.gay" = {
