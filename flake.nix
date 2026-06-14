@@ -14,8 +14,8 @@
       inputs.nixpkgs.follows ="nixpkgs";
     };
     #nvim-conf.url = "https://github.com/lunyaUwU/nvim.nix";
-    nix-gaming.url = "github:fufexan/nix-gaming";
-    nix-gaming.inputs.nixpkgs.follows = "nixpkgs";
+    #nix-gaming.url = "github:fufexan/nix-gaming";
+    #nix-gaming.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
     hyprlock.url = "github:hyprwm/hyprlock";
     #c3d2-user.url = "git+https://gitea.c3d2.de/C3D2/nix-user-module.git";
@@ -41,7 +41,7 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
       nix-darwin.inputs.nixpkgs.follows = "nixpkgs";    sops-nix.url = "github:Mic92/sops-nix";
     };
-  outputs = { nur,audio,self, nixpkgs,home-manager,nix-gaming,
+  outputs = { nur,audio,self, nixpkgs,home-manager,
   #,c3d2-user,
   nvim-conf,hyprlock,
   #nixos-cosmic,
