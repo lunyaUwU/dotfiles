@@ -1031,6 +1031,26 @@
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1781242433,
+        "narHash": "sha256-bchLZZ3sRn740zyvD2icZSnNoTaanN0nw7l6fjVXO+E=",
+        "owner": "LnL7",
+        "repo": "nix-darwin",
+        "rev": "aabb2037edfc0f210723b72cd5f528aab5dd3f0b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LnL7",
+        "repo": "nix-darwin",
+        "type": "github"
+      }
+    },
+    "nix-darwin_2": {
+      "inputs": {
+        "nixpkgs": [
           "nvim-conf",
           "nixvim",
           "nixpkgs"
@@ -1295,7 +1315,7 @@
         "flake-parts": "flake-parts_4",
         "git-hooks": "git-hooks_3",
         "home-manager": "home-manager_3",
-        "nix-darwin": "nix-darwin",
+        "nix-darwin": "nix-darwin_2",
         "nixpkgs": [
           "nvim-conf",
           "nixpkgs"
@@ -1436,6 +1456,7 @@
         "inkstitch": "inkstitch",
         "mail-server": "mail-server",
         "mixbus": "mixbus",
+        "nix-darwin": "nix-darwin",
         "nix-gaming": "nix-gaming",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_7",
