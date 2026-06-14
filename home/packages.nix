@@ -57,24 +57,20 @@
   users.users.luna.packages = with pkgs; [
     (cutter.withPlugins (ps: with ps; [ jsdec rz-ghidra sigdb ]))
     #pkgs.nur.repos.Redrield.binaryninja 
-    feather
+#    feather
     fortls
-    gfortran9
     helix
     gcc
     oversteer
     wine64Packages.staging
-    tytools
+    
+    #tytools
     m8c
     librewolf-wayland
     mommy
     fastfetch
-    libimobiledevice
-    spice
     sqlite 
     ghostty
-    #ghostty.packages.x86_64-linux.default
-    #discordo
     mpvpaper
     eww
     yazi
@@ -83,11 +79,9 @@
       # withOpenASAR = true; # can do this here too
       withVencord = true;
     })
-    octaveFull
     #nix-gaming.packages.wine-ge
-    mixbus.packages.x86_64-linux.default
+    #mixbus.packages.x86_64-linux.default
     catgirl
-    zulu8
     zulu23
     pinentry-rofi
     pinentry-gnome3
@@ -150,7 +144,6 @@
     #arduino-ide
     firefox
     #epiphany
-    python3
     neovide
     flatpak
     #nitrokey-app2
@@ -188,10 +181,7 @@
 
     bottom
     linux-wifi-hotspot
-    #thunderbird	
-   # betterbird
     osu-lazer-bin      
-    #lunar-client
     hyfetch
     foliate
     signal-desktop
@@ -210,7 +200,7 @@
     #helix
     #rustup
     #element-desktop
-    rofi-wayland-unwrapped
+    rofi-unwrapped
     waybar
     dunst
     wl-clipboard
@@ -228,12 +218,13 @@
     #turbovnc
     #cutter
     #cutterPlugins.rz-ghidra
-    ffmpeg_7-full
+    ffmpeg_7
     typescript
     #rizin
     #sc-im
     #darktable
-    surge
+    
+    #surge
     helm
     x42-plugins
     zam-plugins
@@ -258,11 +249,10 @@
     #minecraft
     bottles
     #rustdesk
-    android-studio
     ghc
     riseup-vpn
     (let base = pkgs.appimageTools.defaultFhsEnvArgs; in
-      pkgs.buildFHSUserEnv (base // {
+      pkgs.buildFHSEnv (base // {
       name = "fhs";
       targetPkgs = pkgs: 
         # pkgs.buildFHSUserEnv provides only a minimal FHS environment,

@@ -4,18 +4,18 @@
   imports = [
     ./hardware-configuration.nix
     ./vaultwarden.nix
-   # ./xonotic.nix
-   # ./jitsy.nix 
+    ./xonotic.nix
+#    ./jitsy.nix 
 #    ./akkoma.nix
 #    ./akkoma-conf.nix
     ./nginx.nix
     ./sops.nix
     ./postgres.nix
     ./mail.nix
-    #./jellyfin.nix
+3    ./jellyfin.nix
 #    ./gotosocial.nix
-    #./nextcloud.nix
-   # ./grafana.nix
+#    ./nextcloud.nix
+    ./grafana.nix
   ];
   system.stateVersion = "25.05";  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -26,11 +26,11 @@
     description  = "luna";
     extraGroups  = [ "wheel" "networkmanager" "docker"];
     openssh.authorizedKeys.keys  = [
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICjendyGMtskVQKga3Q5ms+/9oXYMM9v/jpMl+zn1Vj0 luna@bar" 
-    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsRsNRXUIfwPSRoY/BSK8U/y9VtgJnreMBdEMB7k/4SZ0PSlBerLJ+zbHCQoI9RAzYBarUzBIv36RCtwR0c1vZOuxfjynfTlIOVq7GEsSbVBwt/baG6/Q9J0n2fWr6Yi4uAsAbEPl0km4oxsaJQsTP9A1dcdVCxPWhI1K11yqZNYUUkCvZ96Y9jhxZaxuX6qr7xRo5AzjU8jCvkKrnHFrDUd0Yt9WzHOZ1jiQbPHcfgBL16KphauRRL8x1gZVlhVNgye5Kdj1oyx1kQC28+AvNDyAjXDrixFemLUGWTsbMX1CyvxoEfkVmzDQIp1u/oF1Q+XqrLfyGlBvHo+vNxEv6Nojugpr3SMDi08FW6E4xnedoStWPlYNQQ2BfAN2UaV79LwxoUhw/ZZYAZfS7Vwv4oUsfRu3Xygsk2Y17A7UM1EAtQZ0SSgJXgW9YtWcgfzW7eLJLzqGWBzplaPT2OZLJggxXyteYIbpyC24GA02Sp0fFQ6xmw+EwTY/JKj851zU= luna@DESKTOP-16EVC47"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICjendyGMtskVQKga3Q5ms+/9oXYMM9v/jpMl+zn1Vj0 luna@bar"
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKbZj0wcX4CcB1cInFt8i/mqwwqA3Ihn4k/qJvV683rk pixel6"
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHoEAFZOboC+PC30PlXvv68wQM7vqeMTuES0UPcLgk2I luna@twinkpad"
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAWleh5k1bbUajA4OmSGDlNy5o1IjcoKWUi2WubvxWq1 maria@Marysia"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDZCDFOECOQw378u5+AIgiYhgIybZ188KBnZTeS9vPnk luna@awoo"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINrpvzwd/AcoYyLNTwP8ht6crNoW9dEQph3JB8jSh5ce luna@Lunas-MacBook-Air.local"
     ];
   };
   boot.loader.systemd-boot.enable = true;

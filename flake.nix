@@ -37,13 +37,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
 
     };
-    sops-nix.url = "github:Mic92/sops-nix";
-  };
+    
+    nix-darwin.url = "github:LnL7/nix-darwin";
+      nix-darwin.inputs.nixpkgs.follows = "nixpkgs";    sops-nix.url = "github:Mic92/sops-nix";
+    };
   outputs = { nur,audio,self, nixpkgs,home-manager,nix-gaming,
   #,c3d2-user,
   nvim-conf,hyprlock,
   #nixos-cosmic,
   nixos-hardware,
+  nix-darwin,
   mixbus,inkstitch,ghostty,sops-nix,mail-server,... }@attrs: {
     nixosConfigurations= {
       shork = nixpkgs.lib.nixosSystem {
@@ -79,6 +82,12 @@
           ];
       };
     };
+    darwinConfigurations."Lunas-MacBook-Air" = nix-darwin.lib.darwinSystem {
+      modules = [
+        ./macbook
+      ];
+    };
+    
     homeConfigurations."luna" = home-manager.lib.homeManagerConfiguration {
         modules = [./home/home-manager { home.username = "luna"; home.homeDirectory = "/home/luna";}];
         extraSpecialArgs = { inherit nixpkgs; };

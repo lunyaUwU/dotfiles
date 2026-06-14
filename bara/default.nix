@@ -30,6 +30,7 @@
   };
   boot.loader.systemd-boot.enable = true;
   boot.initrd.systemd.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 1;
   boot.loader.efi.canTouchEfiVariables = true;
   services.fwupd.enable = true;
   hardware.graphics.enable = true;

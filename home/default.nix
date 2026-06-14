@@ -8,18 +8,18 @@
     ./hardware.nix
     ../cachix.nix
     ./packages.nix
-    ./solokey.nix
+#    ./solokey.nix
     ./nvim.nix
     ./hyprlock.nix
     ./tor.nix
     ./virtualisation.nix
-    ./jellyfin.nix
+#    ./jellyfin.nix
     #./sql.nix
   ];
   users.users.luna = {
     group = "kittens";
     isNormalUser = true;
-    extraGroups = [ "docker" "wheel" "networkmanager" "adbuser" "libvirtd" "kvm"]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "plugdev" "docker" "wheel" "networkmanager" "adbuser" "libvirtd" "kvm"]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;      
   };
   nix.settings.trusted-users = ["luna" "@wheel"];
