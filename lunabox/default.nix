@@ -33,6 +33,8 @@
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINrpvzwd/AcoYyLNTwP8ht6crNoW9dEQph3JB8jSh5ce luna@Lunas-MacBook-Air.local"
     ];
   };
+
+  documentation.doc.enable = false;
   boot.loader.systemd-boot.enable = true;
   boot.initrd.systemd.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
