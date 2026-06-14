@@ -12,7 +12,7 @@
     ./sops.nix
     ./postgres.nix
     ./mail.nix
-3    ./jellyfin.nix
+#   ./jellyfin.nix
 #    ./gotosocial.nix
 #    ./nextcloud.nix
     ./grafana.nix
