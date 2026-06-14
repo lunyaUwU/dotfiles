@@ -14,7 +14,7 @@
       certificateFile = "/var/lib/acme/mail.estrogen.today/fullchain.pem";
       privateKeyFile = "/var/lib/acme/mail.estrogen.today/key.pem";
     };
-    loginAccounts = {
+    accounts = {
       "luna@lunyathe.gay" = {
         hashedPasswordFile = "/var/hashes/luna";
         aliases = [
