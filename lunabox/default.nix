@@ -30,6 +30,7 @@
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKbZj0wcX4CcB1cInFt8i/mqwwqA3Ihn4k/qJvV683rk pixel6"
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHoEAFZOboC+PC30PlXvv68wQM7vqeMTuES0UPcLgk2I luna@twinkpad"
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDZCDFOECOQw378u5+AIgiYhgIybZ188KBnZTeS9vPnk luna@awoo"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINrpvzwd/AcoYyLNTwP8ht6crNoW9dEQph3JB8jSh5ce luna@Lunas-MacBook-Air.local"
     ];
   };
   boot.loader.systemd-boot.enable = true;
