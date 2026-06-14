@@ -5,16 +5,16 @@
     ./hardware-configuration.nix
     ./vaultwarden.nix
     ./xonotic.nix
-    ./jitsy.nix 
+#    ./jitsy.nix 
 #    ./akkoma.nix
 #    ./akkoma-conf.nix
     ./nginx.nix
     ./sops.nix
     ./postgres.nix
     ./mail.nix
-    ./jellyfin.nix
+3    ./jellyfin.nix
 #    ./gotosocial.nix
-    ./nextcloud.nix
+#    ./nextcloud.nix
     ./grafana.nix
   ];
   system.stateVersion = "25.05";  

@@ -2,9 +2,7 @@
 
 {
   imports = [mail-server.nixosModules.default];
-
-  
-  mailserver = {
+    mailserver = {
     enable = true;
     fqdn = "mail.estrogen.today";
     domains = [ "estrogen.today" "lunyathe.gay" ];
@@ -12,6 +10,10 @@
     stateVersion = 3;
     # A list of all login accounts. To create the password hashes, use
     # nix-shell -p mkpasswd --run 'mkpasswd -sm bcrypt'
+    x509 = {
+      certificateFile = "/var/lib/acme/mail.estrogen.today/fullchain.pem";
+      privateKeyFile = "/var/lib/acme/mail.estrogen.today/key.pem";
+    };
     loginAccounts = {
       "luna@lunyathe.gay" = {
         hashedPasswordFile = "/var/hashes/luna";
@@ -30,18 +32,6 @@
     
     # Use Let's Encrypt certificates. Note that this needs to set up a stripped
     # down nginx and opens port 80.
-    certificateScheme = "acme-nginx";
-  };
-  services.postfixadmin = {
-      enable = true;
-      setupPasswordFile = "/var/postfixadmin/admin-password";
-      hostName = "mailadmin.estrogen.today";
-      adminEmail = "adminEmail@estrogen.today";
-      extraConfig = ''
-        $CONF['setup_password'] = file_get_contents('/var/postfixadmin/admin-password');
-        ?>
-      '';
-      #database.host = "localhost";
   };
   services.roundcube = {
      enable = true;

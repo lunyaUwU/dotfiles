@@ -2,7 +2,7 @@
 {
   services.nextcloud = {
     enable = true;
-    package = pkgs.nextcloud31;
+    package = pkgs.nextcloud32;
     hostName = "cloud.estrogen.today"; 
     database.createLocally = true;
     configureRedis = true;
@@ -33,7 +33,7 @@
   };
 
   services.onlyoffice = {
-    enable = true;
+    enable = false;
     hostname = "office.estrogen.today";
   };
 }
