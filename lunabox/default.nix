@@ -14,7 +14,7 @@
     ./mail.nix
 #   ./jellyfin.nix
 #    ./gotosocial.nix
-    ./nextcloud.nix
+#    ./nextcloud.nix
 #   ./grafana.nix
   ];
   system.stateVersion = "25.05";  
