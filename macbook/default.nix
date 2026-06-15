@@ -2,14 +2,16 @@
 { pkgs,config, ... }: {
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
-    environment.systemPackages =
+    environment.systemPackages = with pkgs;
     [
-      pkgs.vim
-      pkgs.helix
-      pkgs.fastfetch
-      pkgs.hyfetch
-      pkgs.cmatrix
-      pkgs.mpv
+      vim
+      helix
+      fastfetch
+      hyfetch
+      cmatrix
+      mpv
+      go
+      nixd
     ];
 
       # Auto upgrade nix package
