@@ -1,19 +1,20 @@
 
-{ pkgs,config, ... }: {
+{ pkgs,config,nvim-conf, ... }: {
       # List packages installed in system profile. To search by name, run:
-      # $ nix-env -qaP | grep wget
-    environment.systemPackages = with pkgs;
+    
+    nixpkgs.config.allowUnfree = true;
+  # $ nix-env -qaP | grep wget
+    environment.systemPackages = 
     [
-      vim
-      helix
-      fastfetch
-      hyfetch
-      cmatrix
-      mpv
-      go
-      nixd
+      pkgs.vim
+      pkgs.helix
+      pkgs.fastfetch
+      pkgs.hyfetch
+      pkgs.cmatrix
+      pkgs.mpv
+      pkgs.go
+      nvim-conf.packages.aarch64-darwin.default
     ];
-
       # Auto upgrade nix package
       # nix.package = pkgs.nix;
 
@@ -26,7 +27,6 @@
 
       # Set Git commit hash for darwin-version.
     system.configurationRevision = config.rev or config.dirtyRev or null;
-
       # Used for backwards compatibility, please read the changelog before changing.
       # $ darwin-rebuild changelog
     system.stateVersion = 4;

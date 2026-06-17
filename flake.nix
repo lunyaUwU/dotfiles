@@ -83,6 +83,7 @@
       };
     };
     darwinConfigurations."Lunas-MacBook-Air" = nix-darwin.lib.darwinSystem {
+     specialArgs = attrs; 
       modules = [
         ./macbook
       ];
