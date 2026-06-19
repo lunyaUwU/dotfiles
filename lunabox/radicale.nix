@@ -13,7 +13,7 @@ let
 
   mailAccounts = config.mailserver.accounts;
   htpasswd = pkgs.writeText "radicale.users" (
-    concatStrings (flip mapAttrsToList mailAccounts (mail: user: "${mail}+:${user.hashedPassword}\n"))
+    concatStrings (flip mapAttrsToList mailAccounts (mail: user: "${mail}+:${user}\n"))
   );
 
 in
