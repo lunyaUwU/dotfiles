@@ -4,16 +4,18 @@
     
     nixpkgs.config.allowUnfree = true;
   # $ nix-env -qaP | grep wget
-    environment.systemPackages = 
+    environment.systemPackages = with pkgs;
     [
-      pkgs.vim
-      pkgs.helix
-      pkgs.fastfetch
-      pkgs.hyfetch
-      pkgs.cmatrix
-      pkgs.mpv
-      pkgs.go
+      vim
+      helix
+      fastfetch
+      hyfetch
+      cmatrix
+      mpv
+      go
       nvim-conf.packages.aarch64-darwin.default
+      qemu_full 
+
     ];
       # Auto upgrade nix package
       # nix.package = pkgs.nix;
