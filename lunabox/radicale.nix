@@ -4,26 +4,13 @@
   lib,
   ...
 }:
-let
-  inherit (lib)
-    concatStrings
-    flip
-    mapAttrsToList
-    ;
-
-  mailAccounts = config.mailserver.accounts;
-  htpasswd = pkgs.writeText "radicale.users" (
-    concatStrings (flip mapAttrsToList mailAccounts (mail: user: "${mail}+:${user}\n"))
-  );
-
-in
 {
   services.radicale = {
     enable = true;
     settings = {
       auth = {
         type = "htpasswd";
-        htpasswd_filename = "${htpasswd}";
+        htpasswd_filename = "/var/hashes/caldav";
         htpasswd_encryption = "bcrypt";
       };
     };
