@@ -4,7 +4,6 @@
   lib,
   ...
 }:
-
 let
   inherit (lib)
     concatStrings
@@ -47,9 +46,4 @@ in
       };
     };
   };
-
-  networking.firewall.allowedTCPPorts = [
-    80
-    443
-  ];
 }
