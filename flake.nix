@@ -71,7 +71,6 @@
         {networking.hostName="lunabox";}
         sops-nix.nixosModules.sops
         starla.nixosModules.default
-        { services.starla.enable = true; }
         ];
 
       };
