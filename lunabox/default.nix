@@ -80,5 +80,10 @@
       }
     ];
   };
+
+  networking.defaultGateway6 = {
+    address = "fe80::1";      
+    interface = "enp7s0";  
+  };
   nixpkgs.config.allowUnfree = true;
  }
