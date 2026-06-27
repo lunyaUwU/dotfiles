@@ -37,6 +37,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
 
     };
+    starla = {
+      url = "github:ananthb/starla";
+
+      inputs.nixpkgs.follows = "nixpkgs";
+    };  
     
     nix-darwin.url = "github:LnL7/nix-darwin";
       nix-darwin.inputs.nixpkgs.follows = "nixpkgs";    sops-nix.url = "github:Mic92/sops-nix";
@@ -47,7 +52,7 @@
   #nixos-cosmic,
   nixos-hardware,
   nix-darwin,
-  mixbus,inkstitch,ghostty,sops-nix,mail-server,... }@attrs: {
+  mixbus,inkstitch,ghostty,sops-nix,mail-server,starla, ... }@attrs: {
     nixosConfigurations= {
       shork = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -65,6 +70,8 @@
         ./lunabox
         {networking.hostName="lunabox";}
         sops-nix.nixosModules.sops
+        starla.nixosModules.default
+        { services.starla.enable = true; }
         ];
 
       };

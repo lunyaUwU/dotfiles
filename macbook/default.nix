@@ -15,7 +15,7 @@
       go
       nvim-conf.packages.aarch64-darwin.default
       qemu_full 
-
+      blackhole
     ];
       # Auto upgrade nix package
       # nix.package = pkgs.nix;
