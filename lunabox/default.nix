@@ -75,7 +75,7 @@
   networking.interfaces.enp7s0 = {
     ipv6.addresses = [
       {
-        address = "2a0a:4cc0:c0:71c6::2"; 
+        address = "2a0a:4cc0:c0:71c6::1"; 
         prefixLength = 64;               
       }
     ];
