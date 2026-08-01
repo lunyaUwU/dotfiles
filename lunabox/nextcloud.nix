@@ -9,7 +9,7 @@
     maxUploadSize = "32G";
     https = true;
     extraApps = {
-      inherit (config.services.nextcloud.package.packages.apps) news contacts calendar tasks;
+      inherit (config.services.nextcloud.package.packages.apps) news contacts calendar tasks oidc;
     };
     extraAppsEnable = true;
     config = { 
@@ -37,5 +37,4 @@
     hostname = "office.estrogen.today";
   };
 }
-
 
