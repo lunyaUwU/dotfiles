@@ -3,15 +3,7 @@
   services.postgresql = {
     enable = true;
     enableJIT = true;
-    ensureUsers = [{
-      name = "akkoma";
-      ensureDBOwnership = true;
-      ensureClauses = {
-        createrole = true;
-        superuser = true;
-        createdb = true;
-      };
-    }
+    ensureUsers = [
     {
       name = "iceshrimp";
       ensureDBOwnership = true;
