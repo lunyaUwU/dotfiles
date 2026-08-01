@@ -13,7 +13,7 @@
     ./hyprlock.nix
     ./tor.nix
     ./virtualisation.nix
-#    ./jellyfin.nix
+    ./jellyfin.nix
     #./sql.nix
   ];
   users.users.luna = {
