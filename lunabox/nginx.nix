@@ -34,7 +34,7 @@
 
       "keycloak.estrogen.today" = {
         forceSSL = true;
-        enableACME = true;
+        enableACME = false;
         locations = {
           "/" = {
             proxyPass = "http://localhost:8222";
