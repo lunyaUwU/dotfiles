@@ -14,8 +14,8 @@
     ./mail.nix
 #   ./jellyfin.nix
 #    ./gotosocial.nix
-#    ./nextcloud.nix
-#   ./grafana.nix
+    ./nextcloud.nix
+    ./grafana.nix
     ./radicale.nix
     ./starla.nix
   ];

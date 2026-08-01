@@ -16,6 +16,9 @@
       nvim-conf.packages.aarch64-darwin.default
       qemu_full 
       blackhole
+      neovide
+      ttl
+      python314
     ];
       # Auto upgrade nix package
       # nix.package = pkgs.nix;
