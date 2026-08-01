@@ -19,6 +19,7 @@
       neovide
       ttl
       python314
+      codex
     ];
       # Auto upgrade nix package
       # nix.package = pkgs.nix;

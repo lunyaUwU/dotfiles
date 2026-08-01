@@ -14,6 +14,7 @@
     ./mail.nix
 #   ./jellyfin.nix
 #    ./gotosocial.nix
+    ./keycloak.nix
     ./nextcloud.nix
     #./grafana.nix
     ./radicale.nix

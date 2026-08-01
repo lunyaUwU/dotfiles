@@ -30,6 +30,16 @@
         createdb = true;
       };
     }
+    {
+      name = "keycloak";
+      ensureDBOwnership = true;
+      ensureClauses = {
+        createrole = true;
+        superuser = true;
+        createdb = true;
+      };
+    }
+
 #   {
 #     name = "postfixadmin";
 #     ensureDBOwnership = true;
@@ -40,7 +50,7 @@
 #     };
 #   }
     ];
-    ensureDatabases = ["akkoma" "iceshrimp" "vaultwarden" 
+    ensureDatabases = ["keycloak" "iceshrimp" "vaultwarden" 
     #  "postfixadmin"
     ];
     authentication = ''

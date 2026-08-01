@@ -31,6 +31,15 @@
           };
         };
       };
+
+      "keycloak.estrogen.today" = {
+        forceSSL = true;
+        enableACME = true;
+        locations = {
+          "/" = {
+            proxyPass = "http://localhost:8222";
+          };
+        };
       "estrogen.today" = {
         forceSSL = true;
         enableACME = true;
