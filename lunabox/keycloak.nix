@@ -8,7 +8,7 @@
       createLocally = true;
 
       username = "keycloak";
-      passwordFile = "/etc/nixos/secrets/keycloak_psql_pass";
+      passwordFile = "/etc/nixos/secrets/keycloak";
     };
 
     settings = {
