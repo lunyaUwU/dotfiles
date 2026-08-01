@@ -15,6 +15,7 @@
       hostname = "keycloak.estrogen.today";
       http-enabled = true;
       http-port = 38080;
+      proxy-headers = "xforwarded";
       
       hostname-strict-https = true;
     };
