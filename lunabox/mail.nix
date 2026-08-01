@@ -28,6 +28,9 @@
       "jadetopaz@estrogen.today" = {
         hashedPasswordFile = "/var/hashes/jadetopaz";
       };
+      "keycloak@estrogen.today" = { 
+        hashedPasswordFile = "/var/hashes/keycloak";
+      };
     };
     
     # Use Let's Encrypt certificates. Note that this needs to set up a stripped
