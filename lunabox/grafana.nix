@@ -19,7 +19,7 @@
   };
   services.prometheus = {
     enable = true;
-    port = 9000;
+    port = 9001;
     
     retentionTime = "180d";
     exporters = {
@@ -51,7 +51,7 @@
           "127.0.0.1:${toString config.services.prometheus.exporters.process.port}" 
           "127.0.0.1:${toString config.services.prometheus.exporters.nginx.port}" 
           "127.0.0.1:${toString config.services.prometheus.exporters.node.port}" 
-          "127.0.0.1:9000"
+          "127.0.0.1:${toString config.services.prometheus.port}"
           ];
         }];
       } 
