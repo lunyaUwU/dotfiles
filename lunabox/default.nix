@@ -16,7 +16,7 @@
 #    ./gotosocial.nix
     ./keycloak.nix
     ./nextcloud.nix
-    #./grafana.nix
+    ./grafana.nix
     ./radicale.nix
     ./starla.nix
     ./authentik.nix
