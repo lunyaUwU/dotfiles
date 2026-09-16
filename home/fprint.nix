@@ -3,7 +3,7 @@
   services.fprintd = {
     enable = true;
     tod = {
-      enable = true
+      enable = true;
     };
   };
 

@@ -20,10 +20,16 @@
       ttl
       python314
       codex
+      openjdk21
+      typst
     ];
       # Auto upgrade nix package
       # nix.package = pkgs.nix;
-
+    fonts.packages = with pkgs; [ 
+      dejavu_fonts
+      nerd-fonts.caskaydia-cove
+      nerd-fonts.comic-shanns-mono
+    ]; 
       # Necessary for using flakes on this system.
     nix.settings.experimental-features = "nix-command flakes";
 
