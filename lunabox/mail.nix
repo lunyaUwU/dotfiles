@@ -28,8 +28,8 @@
       "jadetopaz@estrogen.today" = {
         hashedPasswordFile = "/var/hashes/jadetopaz";
       };
-      "keycloak@estrogen.today" = { 
-        hashedPasswordFile = "/var/hashes/keycloak";
+      "authentik@estrogen.today" = { 
+        hashedPasswordFile = "/var/hashes/authentik";
       };
     };
     
