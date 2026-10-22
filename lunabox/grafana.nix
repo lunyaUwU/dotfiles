@@ -28,19 +28,14 @@
         enabledCollectors = [ "systemd" ];
         port = 9002;
       };
-      process = {
+      dovecot = {
         enable = true;
         port = 9003;
-        settings.process_names = [
-          { name = "java";
-            cmdline = ["java"];  
-          }
-         ]
-        ;
       };
+
       nginx = {
         enable = true;
-        port = 9004;
+        port = 9005;
       };
     };
     scrapeConfigs = [
@@ -48,7 +43,7 @@
         job_name = "prometheus";
         static_configs = [{
           targets = [ 
-          "127.0.0.1:${toString config.services.prometheus.exporters.process.port}" 
+          "127.0.0.1:${toString config.services.prometheus.exporters.dovecot.port}" 
           "127.0.0.1:${toString config.services.prometheus.exporters.nginx.port}" 
           "127.0.0.1:${toString config.services.prometheus.exporters.node.port}" 
           "127.0.0.1:${toString config.services.prometheus.port}"
