@@ -57,7 +57,8 @@
     git
     vim
     tmux
-    dotnet-aspnetcore_9 
+    dotnet-aspnetcore_9
+    dotnet-aspnetcore_10
     bash
     coreutils
     python311
