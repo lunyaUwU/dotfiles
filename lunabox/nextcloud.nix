@@ -23,8 +23,6 @@ in
       };
     };
     config = { 
-      adminuser = "admin";
-      adminpassFile = "/var/nextcloud-pw";
       dbtype = "pgsql";
     };
   };
