@@ -39,9 +39,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    sops-nix.url = "github:Mic92/sops-nix";
     
     nix-darwin.url = "github:LnL7/nix-darwin";
-      nix-darwin.inputs.nixpkgs.follows = "nixpkgs";    sops-nix.url = "github:Mic92/sops-nix";
+      nix-darwin.inputs.nixpkgs.follows = "nixpkgs";        
     };
   outputs = { nur,audio,self, nixpkgs,home-manager,
   nvim-conf,hyprlock,
