@@ -19,7 +19,7 @@
     ./grafana.nix
     ./radicale.nix
     ./starla.nix
-    ./authentik.nix
+   # ./authentik.nix
   ];
   system.stateVersion = "25.05";  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
