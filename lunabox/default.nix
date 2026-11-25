@@ -24,6 +24,7 @@
   system.stateVersion = "25.05";  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings.download-buffer-size = 524288000;
+  services.unbound.enable = true;
   users.users.luna = {
     isNormalUser  = true;
     home  = "/home/luna";
