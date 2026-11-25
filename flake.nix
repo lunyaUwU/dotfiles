@@ -3,7 +3,6 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    audio.url = "github:polygon/audio.nix";
     nvim-conf = {
       url = "github:lunyaUwU/nvim.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -44,7 +43,7 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
       nix-darwin.inputs.nixpkgs.follows = "nixpkgs";        
     };
-  outputs = { nur,audio,self, nixpkgs,home-manager,
+  outputs = { nur,self, nixpkgs,home-manager,
   nvim-conf,hyprlock,
   nixos-hardware,
   nix-darwin,
